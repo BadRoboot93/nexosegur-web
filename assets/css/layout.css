@@ -1,12 +1,3 @@
-.container {
-  width: min(
-    calc(100% - (var(--container-padding) * 2)),
-    var(--container-max-width)
-  );
-
-  margin-inline: auto;
-}
-
 .site-header {
   background-color: var(--color-background);
 }
