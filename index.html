@@ -9,7 +9,7 @@
 
     <meta
       name="description"
-      content="Sitio institucional de NexoSegur Seguridad Privada."
+      content="NexoSegur Seguridad Privada. Servicios preventivos de seguridad, control de accesos, custodia y protección en Córdoba."
     />
 
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -32,6 +32,10 @@
         <nav class="primary-navigation" aria-label="Navegación principal">
           <ul class="primary-navigation__list">
             <li>
+              <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
               <a href="#nosotros">Nosotros</a>
             </li>
 
@@ -48,23 +52,33 @@
             </li>
           </ul>
         </nav>
+
+        <a
+          class="button button--primary site-header__contact"
+          href="https://wa.me/5493513581736"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contactanos
+        </a>
       </div>
     </header>
 
     <main>
+      <!-- Presentación inicial -->
       <section id="inicio" class="hero">
         <div class="container hero__container">
           <div class="hero__content">
-            <p class="hero__eyebrow">Seguridad privada en Córdoba</p>
+            <p class="hero__eyebrow">Cercanía, confianza y profesionalismo</p>
 
             <h1 class="hero__title">
-              Protección preventiva con cercanía y profesionalismo
+              Seguridad privada con atención cercana y responsable
             </h1>
 
             <p class="hero__description">
-              NexoSegur brinda servicios de seguridad privada orientados a
-              proteger personas, bienes e instalaciones mediante una atención
-              cercana, responsable y profesional.
+              NexoSegur brinda servicios preventivos de seguridad orientados a
+              proteger personas, bienes e instalaciones, mediante una atención
+              directa, transparente y profesional.
             </p>
 
             <div class="hero__actions">
@@ -83,79 +97,87 @@
             </div>
           </div>
 
-          <div class="hero__media">
-            <!-- Imagen institucional pendiente -->
+          <div class="media-placeholder hero__media" aria-hidden="true">
+            <span>Imagen institucional</span>
           </div>
         </div>
       </section>
 
+      <!-- Información institucional -->
       <section id="nosotros" class="institutional">
         <div class="container">
           <header class="section-header">
-            <p class="section-header__eyebrow">Quiénes somos</p>
+            <p class="section-header__eyebrow">Sobre NexoSegur</p>
 
             <h2 class="section-header__title">
-              Una empresa de seguridad privada cercana y profesional
+              Una empresa cercana, transparente y profesional
             </h2>
 
             <p class="section-header__description">
               NexoSegur es una empresa de seguridad privada de reciente
-              creación, orientada a brindar servicios preventivos mediante una
-              relación directa, responsable y transparente.
+              creación, formalmente habilitada para desarrollar su actividad en
+              la provincia de Córdoba.
             </p>
           </header>
 
           <div class="institutional__content">
-            <div class="institutional__text">
-              <p>
-                La empresa nace a partir de la experiencia previa de sus
-                integrantes en el sector de la seguridad privada y del
-                conocimiento directo de las necesidades habituales de clientes y
-                personal operativo.
-              </p>
+            <div class="institutional__information">
+              <div
+                class="media-placeholder institutional__media"
+                aria-hidden="true"
+              >
+                <span>Imagen institucional</span>
+              </div>
 
-              <p>
-                Su propuesta institucional busca combinar profesionalismo,
-                cercanía y seguimiento responsable, manteniendo una comunicación
-                clara con cada cliente y acompañando la prestación de los
-                servicios.
-              </p>
+              <div class="institutional__text">
+                <p>
+                  La empresa nace a partir de la experiencia previa de sus
+                  integrantes en el sector y del conocimiento directo de las
+                  necesidades habituales de clientes y personal operativo.
+                </p>
+
+                <p>
+                  Su propuesta busca combinar prevención, profesionalismo y
+                  seguimiento responsable, manteniendo una comunicación clara y
+                  directa durante la prestación de cada servicio.
+                </p>
+              </div>
             </div>
 
             <ul class="institutional__values">
-              <li class="card value-card">
-                <h3 class="value-card__title">Cercanía</h3>
+              <li class="value-item">
+                <h3 class="value-item__title">Cercanía</h3>
 
-                <p class="value-card__description">
-                  Comunicación directa y atención cercana con clientes y
+                <p class="value-item__description">
+                  Comunicación directa y atención próxima con clientes y
                   personal operativo.
                 </p>
               </li>
 
-              <li class="card value-card">
-                <h3 class="value-card__title">Profesionalismo</h3>
+              <li class="value-item">
+                <h3 class="value-item__title">Confianza</h3>
 
-                <p class="value-card__description">
-                  Prestación responsable y seguimiento del cumplimiento de las
-                  consignas acordadas.
+                <p class="value-item__description">
+                  Relaciones basadas en el compromiso, la responsabilidad y el
+                  cumplimiento.
                 </p>
               </li>
 
-              <li class="card value-card">
-                <h3 class="value-card__title">Transparencia</h3>
+              <li class="value-item">
+                <h3 class="value-item__title">Transparencia</h3>
 
-                <p class="value-card__description">
+                <p class="value-item__description">
                   Información clara y coherente con la situación real de la
                   empresa y de cada servicio.
                 </p>
               </li>
 
-              <li class="card value-card">
-                <h3 class="value-card__title">Prevención</h3>
+              <li class="value-item">
+                <h3 class="value-item__title">Profesionalismo</h3>
 
-                <p class="value-card__description">
-                  Enfoque orientado a prevenir riesgos y actuar de forma
-                  responsable ante situaciones que requieran intervención.
+                <p class="value-item__description">
+                  Prestación responsable, supervisión y seguimiento de las
+                  consignas acordadas.
                 </p>
               </li>
             </ul>
@@ -163,110 +185,283 @@
         </div>
       </section>
 
+      <!-- Servicios -->
       <section id="servicios" class="services">
         <div class="container">
           <header class="section-header">
             <p class="section-header__eyebrow">Nuestros servicios</p>
 
             <h2 class="section-header__title">
-              Soluciones preventivas adaptadas a cada necesidad
+              Soluciones preventivas para distintas necesidades
             </h2>
 
             <p class="section-header__description">
-              NexoSegur ofrece servicios de seguridad privada orientados a la
-              prevención, el control y la protección de personas, bienes e
-              instalaciones.
+              Los servicios se definen de acuerdo con las características del
+              lugar, las necesidades identificadas y las consignas acordadas con
+              cada cliente.
             </p>
           </header>
 
-          <ul class="services__grid">
-            <li class="card service-card">
-              <h3 class="service-card__title">Vigilancia preventiva</h3>
+          <ul class="services__list">
+            <li class="service-item">
+              <h3 class="service-item__title">Vigilancia preventiva</h3>
 
-              <p class="service-card__description">
-                Presencia de personal de seguridad orientada a prevenir riesgos,
-                observar situaciones relevantes y actuar conforme a las
-                consignas establecidas.
+              <p class="service-item__description">
+                Presencia de personal orientada a prevenir riesgos, observar
+                situaciones relevantes y actuar conforme a las consignas
+                establecidas.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Control de accesos</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Control de accesos</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Supervisión del ingreso y egreso de personas, vehículos y
-                elementos según las condiciones definidas para cada lugar.
+                elementos según las condiciones definidas para cada objetivo.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Custodia de instalaciones</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Custodia de instalaciones</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Protección preventiva de establecimientos, espacios y
                 dependencias mediante presencia y control organizado.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Protección de bienes</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Protección de bienes</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Supervisión destinada a reducir riesgos sobre bienes materiales
                 y recursos ubicados dentro del objetivo.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Protección de personas</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Protección de personas</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Acompañamiento preventivo orientado a preservar la seguridad de
-                personas dentro del alcance acordado.
+                personas dentro del alcance previamente acordado.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Recorridos preventivos</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Recorridos preventivos</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Inspecciones periódicas del objetivo para detectar novedades,
                 riesgos o situaciones que requieran atención.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Registro de novedades</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Registro de novedades</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Documentación de hechos, observaciones e incidencias relevantes
-                producidas durante la prestación del servicio.
+                ocurridas durante la prestación.
               </p>
             </li>
 
-            <li class="card service-card">
-              <h3 class="service-card__title">Supervisión de consignas</h3>
+            <li class="service-item">
+              <h3 class="service-item__title">Supervisión de consignas</h3>
 
-              <p class="service-card__description">
+              <p class="service-item__description">
                 Seguimiento del cumplimiento de las instrucciones y condiciones
                 establecidas para cada servicio.
+              </p>
+            </li>
+          </ul>
+
+          <div class="services__action">
+            <p>
+              ¿Necesitás seguridad para tu empresa, institución o propiedad?
+            </p>
+
+            <a
+              class="button button--primary"
+              href="https://wa.me/5493513581736"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Respaldo institucional -->
+      <section id="respaldo" class="support">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__eyebrow">Respaldo institucional</p>
+
+            <h2 class="section-header__title">
+              Formalidad y experiencia al servicio de cada objetivo
+            </h2>
+
+            <p class="section-header__description">
+              NexoSegur cuenta con elementos institucionales objetivos que
+              respaldan el desarrollo de su actividad.
+            </p>
+          </header>
+
+          <ul class="support__list">
+            <li class="card support-card">
+              <div class="support-card__icon-placeholder" aria-hidden="true">
+                01
+              </div>
+
+              <h3 class="support-card__title">Habilitación formal</h3>
+
+              <p class="support-card__description">
+                Empresa formalmente habilitada para desarrollar servicios de
+                seguridad privada en la provincia de Córdoba.
+              </p>
+            </li>
+
+            <li class="card support-card">
+              <div class="support-card__icon-placeholder" aria-hidden="true">
+                02
+              </div>
+
+              <h3 class="support-card__title">Dirección Técnica</h3>
+
+              <p class="support-card__description">
+                La actividad cuenta con una Dirección Técnica definida,
+                responsable del acompañamiento profesional de los servicios.
+              </p>
+            </li>
+
+            <li class="card support-card">
+              <div class="support-card__icon-placeholder" aria-hidden="true">
+                03
+              </div>
+
+              <h3 class="support-card__title">Experiencia previa</h3>
+
+              <p class="support-card__description">
+                La empresa se encuentra respaldada por la experiencia previa de
+                sus integrantes en el sector de la seguridad privada.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="respaldo">
-        <!-- Respaldo institucional -->
-      </section>
+      <!-- Contacto -->
+      <section id="contacto" class="contact">
+        <div class="container contact__container">
+          <div class="contact__content">
+            <p class="contact__eyebrow">Contacto</p>
 
-      <section id="contacto">
-        <!-- Contacto -->
+            <h2 class="contact__title">
+              Conversemos sobre tu necesidad de seguridad
+            </h2>
+
+            <p class="contact__description">
+              Podés comunicarte directamente con NexoSegur para realizar una
+              consulta y coordinar una primera evaluación.
+            </p>
+          </div>
+
+          <div class="contact__action">
+            <a
+              class="button button--primary button--large"
+              href="https://wa.me/5493513581736"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Iniciar conversación por WhatsApp
+            </a>
+
+            <p class="contact__phone">
+              WhatsApp oficial:
+              <a href="tel:+5493513581736"> 351 3581736 </a>
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <!-- Información institucional permanente -->
+      <div class="container site-footer__container">
+        <div class="site-footer__brand">
+          <img
+            class="site-footer__logo"
+            src="assets/images/brand/nexosegur-logo-horizontal-white.webp"
+            alt="NexoSegur Seguridad Privada"
+          />
+
+          <p>
+            Seguridad privada con cercanía, transparencia y profesionalismo.
+          </p>
+        </div>
+
+        <nav class="site-footer__navigation" aria-label="Navegación secundaria">
+          <h2 class="site-footer__title">Navegación</h2>
+
+          <ul>
+            <li>
+              <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#nosotros">Nosotros</a>
+            </li>
+
+            <li>
+              <a href="#servicios">Servicios</a>
+            </li>
+
+            <li>
+              <a href="#respaldo">Respaldo</a>
+            </li>
+
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__services">
+          <h2 class="site-footer__title">Servicios</h2>
+
+          <ul>
+            <li>Vigilancia preventiva</li>
+            <li>Control de accesos</li>
+            <li>Custodia de instalaciones</li>
+            <li>Recorridos preventivos</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__contact">
+          <h2 class="site-footer__title">Contacto</h2>
+
+          <address>
+            <p>
+              WhatsApp:
+              <a href="tel:+5493513581736"> 351 3581736 </a>
+            </p>
+
+            <p>Córdoba, Argentina</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-container">
+          <p>
+            © 2026 NexoSegur Seguridad Privada. Todos los derechos reservados.
+          </p>
+
+          <a href="#inicio"> Volver al inicio </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
