@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #0d2b5c;
+  --color-accent: #2196f3;
+  --color-text: #1f2937;
+  --color-background: #ffffff;
+  --color-surface: #f3f4f6;
+  --color-border: #d1d5db;
+
+  --font-family-primary: Arial, Helvetica, sans-serif;
+
+  --container-max-width: 1200px;
+  --container-padding: 1rem;
+}
+
+body {
+  min-width: 320px;
+  font-family: var(--font-family-primary);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+a {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}

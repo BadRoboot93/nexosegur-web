@@ -11,17 +11,43 @@
       name="description"
       content="Sitio institucional de NexoSegur Seguridad Privada."
     />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
   </head>
 
   <body>
     <header class="site-header">
-      <a class="site-brand" href="#inicio">
-        <!-- Logo + nombre de la empresa -->
-      </a>
+      <div class="container site-header__container">
+        <a class="site-brand" href="#inicio" aria-label="Ir al inicio">
+          <img
+            class="site-brand__logo"
+            src="assets/images/brand/nexosegur-logo-horizontal.webp"
+            alt="NexoSegur Seguridad Privada"
+          />
+        </a>
 
-      <nav class="primary-navigation">
-        <!-- Enlaces a las secciones -->
-      </nav>
+        <nav class="primary-navigation" aria-label="Navegación principal">
+          <ul class="primary-navigation__list">
+            <li>
+              <a href="#nosotros">Nosotros</a>
+            </li>
+
+            <li>
+              <a href="#servicios">Servicios</a>
+            </li>
+
+            <li>
+              <a href="#respaldo">Respaldo</a>
+            </li>
+
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
