@@ -30,3 +30,49 @@ a:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 4px;
 }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--color-accent);
+}
+
+.button--secondary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-color: transparent;
+}
+
+.button--secondary:hover {
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
