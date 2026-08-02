@@ -4,17 +4,17 @@
 
 .site-header {
   position: absolute;
-  inset: 0 0 auto 0;
-  z-index: 100;
+  inset: 0 0 auto;
+  z-index: var(--z-header);
 
   background: linear-gradient(
     180deg,
-    rgb(8 29 63 / 88%) 0%,
-    rgb(8 29 63 / 72%) 100%
+    rgb(8 29 63 / 64%) 0%,
+    rgb(8 29 63 / 18%) 100%
   );
 
-  border-bottom: 1px solid rgb(255 255 255 / 10%);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
 
 .site-header__container {
@@ -24,54 +24,52 @@
   min-height: 5.5rem;
 }
 
+/* =======================================================
+   BRAND
+======================================================= */
+
 .site-brand {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  color: var(--color-text-light);
-
-  text-decoration: none;
+  color: var(--color-on-dark);
 }
 
 .site-brand__title {
   display: flex;
   align-items: center;
 
-  font-size: 2.35rem;
+  margin-bottom: var(--space-1);
+
+  font-size: 2.3rem;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .site-brand__title-primary {
-  color: var(--color-text-light);
+  color: var(--color-on-dark);
 }
 
 .site-brand__title-accent {
   color: var(--color-accent);
 }
 
-.site-brand__divider {
-  width: 75%;
-  height: 2px;
-
-  margin: 0.3rem 0;
-
-  background: rgb(255 255 255 / 20%);
-}
-
 .site-brand__subtitle {
-  color: rgb(255 255 255 / 88%);
+  color: var(--color-on-dark-muted);
 
-  font-size: 0.72rem;
-
+  font-size: 0.7rem;
   font-weight: 700;
-
   letter-spacing: 0.28em;
-
+  line-height: 1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
+
+/* =======================================================
+   PRIMARY NAVIGATION
+======================================================= */
 
 .primary-navigation {
   margin-left: auto;
@@ -80,55 +78,58 @@
 .primary-navigation__list {
   display: flex;
   align-items: center;
-
   gap: 3.5rem;
-
-  list-style: none;
 }
 
 .primary-navigation__list a {
   position: relative;
 
-  color: rgb(255 255 255 / 86%);
+  color: var(--color-on-dark-muted);
 
   font-size: 1rem;
-
   font-weight: 600;
 
-  transition: color 0.25s ease;
-}
-
-.primary-navigation__list a:hover {
-  color: var(--color-white);
+  transition: color var(--transition-medium);
 }
 
 .primary-navigation__list a::after {
   position: absolute;
-
-  left: 0;
   bottom: -0.5rem;
+  left: 0;
 
   width: 0;
   height: 2px;
 
-  background: var(--color-accent);
+  background-color: var(--color-accent);
 
   content: "";
 
-  transition: width 0.25s ease;
+  transition: width var(--transition-medium);
 }
 
-.primary-navigation__list a:hover::after {
-  width: 100%;
-}
-
+.primary-navigation__list a:focus-visible,
 .primary-navigation__list a.is-active {
-  color: var(--color-white);
+  color: var(--color-on-dark);
 }
 
+.primary-navigation__list a:focus-visible::after,
 .primary-navigation__list a.is-active::after {
   width: 100%;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .primary-navigation__list a:hover {
+    color: var(--color-on-dark);
+  }
+
+  .primary-navigation__list a:hover::after {
+    width: 100%;
+  }
+}
+
+/* =======================================================
+   NAVIGATION TOGGLE
+======================================================= */
 
 .navigation-toggle {
   display: none;
@@ -140,7 +141,8 @@
   border: 1px solid rgb(255 255 255 / 18%);
   border-radius: var(--radius-small);
 
-  color: var(--color-white);
+  color: var(--color-on-dark);
+
   background-color: rgb(255 255 255 / 6%);
 
   cursor: pointer;
@@ -172,6 +174,21 @@
   transform: translateY(-0.6rem) rotate(-45deg);
 }
 
+/* =======================================================
+   TABLET AND MOBILE
+======================================================= */
+
+@media (max-width: 75rem) {
+  .primary-navigation__list {
+    gap: 2rem;
+    padding-right: var(--space-5);
+  }
+
+  .site-brand__title {
+    font-size: 2.15rem;
+  }
+}
+
 @media (max-width: 60rem) {
   .site-header {
     position: relative;
@@ -186,12 +203,8 @@
     backdrop-filter: blur(12px);
   }
 
-  .site-header__container {
-    min-height: 5.5rem;
-  }
-
   .site-brand__title {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .navigation-toggle {
@@ -203,12 +216,13 @@
 
   .primary-navigation {
     position: absolute;
-    z-index: 20;
+    z-index: var(--z-menu);
     top: 100%;
     right: 0;
     left: 0;
 
     display: none;
+
     width: 100%;
     margin-left: 0;
     padding-block: var(--space-3) var(--space-5);
@@ -231,12 +245,10 @@
       calc(100% - (var(--container-padding) * 2)),
       var(--container-max-width)
     );
-
     margin-inline: auto;
   }
 
   .primary-navigation__list {
-    display: flex;
     align-items: stretch;
     flex-direction: column;
     gap: 0;
@@ -252,10 +264,12 @@
 
   .primary-navigation__list a {
     display: block;
-    width: 100%;
-    padding: 1rem 0;
 
-    color: rgb(255 255 255 / 84%);
+    width: 100%;
+    padding-block: var(--space-4);
+
+    color: var(--color-on-dark-muted);
+
     font-size: 1rem;
     font-weight: 600;
   }
@@ -263,14 +277,17 @@
   .primary-navigation__list a:hover,
   .primary-navigation__list a:focus-visible,
   .primary-navigation__list a.is-active {
-    color: var(--color-white);
+    color: var(--color-on-dark);
   }
 
-  /* En móvil no usamos la línea inferior de escritorio */
   .primary-navigation__list a::after {
     display: none;
   }
 }
+
+/* =======================================================
+   SMALL MOBILE
+======================================================= */
 
 @media (max-width: 30rem) {
   .site-header__container {
@@ -279,11 +296,6 @@
 
   .site-brand__title {
     font-size: 1.75rem;
-  }
-
-  .site-brand__divider {
-    width: 75%;
-    height: 1px;
   }
 
   .site-brand__subtitle {

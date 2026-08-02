@@ -1,0 +1,275 @@
+/* =======================================================
+   HERO
+======================================================= */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+
+  color: var(--color-on-dark);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgb(8 29 63 / 94%) 0%,
+      rgb(8 29 63 / 82%) 26%,
+      rgb(8 29 63 / 42%) 55%,
+      rgb(8 29 63 / 10%) 100%
+    ),
+    url("../images/hero/hero-nexosegur2.png") center / cover no-repeat;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgb(8 29 63 / 14%) 0%,
+    transparent 48%,
+    rgb(8 29 63 / 26%) 100%
+  );
+
+  content: "";
+}
+
+/* =======================================================
+   HERO LAYOUT
+======================================================= */
+
+.hero__container {
+  display: flex;
+  align-items: center;
+
+  padding-top: calc(5.5rem + var(--space-8));
+  padding-bottom: var(--space-6);
+}
+
+.hero__content {
+  max-width: 46rem;
+  padding-left: var(--space-1);
+
+  transform: translateY(-1.3rem);
+}
+
+/* =======================================================
+   HERO CONTENT
+======================================================= */
+
+.hero__title {
+  max-width: 11ch;
+  margin-bottom: var(--space-5);
+
+  color: var(--color-on-dark);
+
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.hero__divider {
+  width: 7rem;
+  height: 3px;
+  margin-bottom: var(--space-4);
+
+  border-radius: 999px;
+
+  background-color: var(--color-accent);
+
+  opacity: 0.8;
+}
+
+.hero__description {
+  max-width: 50ch;
+  margin-bottom: var(--space-6);
+
+  color: var(--color-on-dark-muted);
+
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.hero__actions .button {
+  min-width: 12.5rem;
+}
+
+.hero__secondary-action {
+  color: var(--color-on-dark);
+
+  border-color: rgb(255 255 255 / 38%);
+
+  background-color: rgb(255 255 255 / 4%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero__secondary-action:hover {
+    color: var(--color-on-dark);
+
+    border-color: rgb(255 255 255 / 82%);
+
+    background-color: rgb(255 255 255 / 10%);
+  }
+}
+
+/* =======================================================
+   TABLET
+======================================================= */
+
+@media (max-width: 60rem) {
+  .hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgb(8 29 63 / 94%) 0%,
+        rgb(8 29 63 / 78%) 48%,
+        rgb(8 29 63 / 34%) 100%
+      ),
+      url("../images/hero/hero-nexosegur2.png") 62% center / cover no-repeat;
+  }
+
+  .hero__container {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+  }
+
+  .hero__content {
+    max-width: 39rem;
+    padding-left: 0;
+
+    transform: none;
+  }
+
+  .hero__title {
+    max-width: 10ch;
+
+    font-size: clamp(2.5rem, 5.9vw, 3.5rem);
+  }
+
+  .hero__divider {
+    width: 6rem;
+    height: 2px;
+  }
+
+  .hero__description {
+    max-width: 42ch;
+
+    font-size: clamp(0.98rem, 1.35vw, 1.15rem);
+  }
+
+  .hero__actions .button {
+    min-width: 11rem;
+    min-height: 3.2rem;
+    padding-inline: 1.7rem;
+
+    font-size: 0.94rem;
+  }
+}
+
+/* =======================================================
+   MOBILE
+======================================================= */
+
+@media (max-width: 40rem) {
+  .hero {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(8 29 63 / 52%) 0%,
+        rgb(8 29 63 / 78%) 38%,
+        rgb(8 29 63 / 96%) 100%
+      ),
+      url("../images/hero/hero-nexosegur2.png") 68% center / cover no-repeat;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      rgb(8 29 63 / 8%) 0%,
+      rgb(8 29 63 / 24%) 38%,
+      rgb(8 29 63 / 70%) 100%
+    );
+  }
+
+  .hero__container {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-6);
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero__title {
+    max-width: 10.5ch;
+    margin-bottom: var(--space-5);
+
+    font-size: clamp(2.4rem, 10.5vw, 3.35rem);
+    line-height: 0.97;
+    letter-spacing: -0.035em;
+  }
+
+  .hero__divider {
+    width: 5rem;
+    height: 2px;
+    margin-bottom: var(--space-3);
+  }
+
+  .hero__description {
+    max-width: 36ch;
+    margin-bottom: var(--space-6);
+
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+
+  .hero__actions .button {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =======================================================
+   SMALL MOBILE
+======================================================= */
+
+@media (max-width: 30rem) {
+  .hero {
+    background-position: 70% center;
+  }
+
+  .hero__container {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-6);
+  }
+
+  .hero__title {
+    font-size: clamp(2.35rem, 12vw, 3rem);
+  }
+
+  .hero__description {
+    max-width: 34ch;
+
+    font-size: 0.95rem;
+  }
+
+  .hero__actions .button {
+    min-height: 3.25rem;
+    padding-inline: var(--space-5);
+  }
+}
