@@ -5,80 +5,86 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>NexoSegur Seguridad Privada</title>
+    <title>NexoSegur Seguridad Privada | Córdoba</title>
 
     <meta
       name="description"
-      content="NexoSegur Seguridad Privada. Servicios preventivos de seguridad, control de accesos, custodia y protección en Córdoba."
+      content="NexoSegur Seguridad Privada ofrece servicios preventivos de seguridad, control de accesos, custodia y protección en Córdoba."
     />
 
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
   </head>
 
   <body>
+    <a class="skip-link" href="#contenido-principal">
+      Ir al contenido principal
+    </a>
+
     <header class="site-header">
       <div class="container site-header__container">
-        <a class="site-brand" href="#inicio" aria-label="Ir al inicio">
-          <img
-            class="site-brand__logo"
-            src="assets/images/brand/nexosegur-logo-horizontal.webp"
-            alt="NexoSegur Seguridad Privada"
-          />
-        </a>
-
-        <nav class="primary-navigation" aria-label="Navegación principal">
-          <ul class="primary-navigation__list">
-            <li>
-              <a href="#inicio">Inicio</a>
-            </li>
-
-            <li>
-              <a href="#nosotros">Nosotros</a>
-            </li>
-
-            <li>
-              <a href="#servicios">Servicios</a>
-            </li>
-
-            <li>
-              <a href="#respaldo">Respaldo</a>
-            </li>
-
-            <li>
-              <a href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-
         <a
-          class="button button--primary site-header__contact"
-          href="https://wa.me/5493513581736"
-          target="_blank"
-          rel="noopener noreferrer"
+          class="site-brand"
+          href="#inicio"
+          aria-label="NexoSegur Seguridad Privada"
         >
-          Contactanos
+          <span class="site-brand__title">
+            <span class="site-brand__title-primary">NEXO</span
+            ><span class="site-brand__title-accent">SEGUR</span>
+          </span>
+
+          <span class="site-brand__divider"></span>
+
+          <span class="site-brand__subtitle"> Seguridad Privada </span>
         </a>
+
+        <button
+          class="navigation-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="navigation-toggle__line"></span>
+          <span class="navigation-toggle__line"></span>
+          <span class="navigation-toggle__line"></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="primary-navigation"
+          aria-label="Navegación principal"
+        >
+          <div class="container primary-navigation__container">
+            <ul class="primary-navigation__list">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#respaldo">Respaldo</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <main>
+    <main id="contenido-principal">
       <!-- Presentación inicial -->
       <section id="inicio" class="hero">
         <div class="container hero__container">
           <div class="hero__content">
             <p class="hero__eyebrow">Cercanía, confianza y profesionalismo</p>
 
-            <h1 class="hero__title">
-              Seguridad privada con atención cercana y responsable
-            </h1>
+            <h1 class="hero__title">Seguridad que genera confianza</h1>
 
             <p class="hero__description">
-              NexoSegur brinda servicios preventivos de seguridad orientados a
-              proteger personas, bienes e instalaciones, mediante una atención
-              directa, transparente y profesional.
+              Acompañamos a empresas, instituciones y organizaciones con
+              servicios de seguridad privada basados en el compromiso, la
+              cercanía y el profesionalismo.
             </p>
 
             <div class="hero__actions">
@@ -88,28 +94,31 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Contactar por WhatsApp
+                Iniciar contacto
               </a>
 
-              <a class="button button--secondary" href="#servicios">
+              <a
+                class="button button--secondary hero__secondary-action"
+                href="#servicios"
+              >
                 Conocer los servicios
               </a>
             </div>
-          </div>
-
-          <div class="media-placeholder hero__media" aria-hidden="true">
-            <span>Imagen institucional</span>
           </div>
         </div>
       </section>
 
       <!-- Información institucional -->
-      <section id="nosotros" class="institutional">
+      <section
+        id="nosotros"
+        class="institutional"
+        aria-labelledby="nosotros-titulo"
+      >
         <div class="container">
           <header class="section-header">
             <p class="section-header__eyebrow">Sobre NexoSegur</p>
 
-            <h2 class="section-header__title">
+            <h2 id="nosotros-titulo" class="section-header__title">
               Una empresa cercana, transparente y profesional
             </h2>
 
@@ -144,10 +153,12 @@
               </div>
             </div>
 
-            <ul class="institutional__values">
+            <ul
+              class="institutional__values"
+              aria-label="Valores institucionales de NexoSegur"
+            >
               <li class="value-item">
                 <h3 class="value-item__title">Cercanía</h3>
-
                 <p class="value-item__description">
                   Comunicación directa y atención próxima con clientes y
                   personal operativo.
@@ -156,7 +167,6 @@
 
               <li class="value-item">
                 <h3 class="value-item__title">Confianza</h3>
-
                 <p class="value-item__description">
                   Relaciones basadas en el compromiso, la responsabilidad y el
                   cumplimiento.
@@ -165,7 +175,6 @@
 
               <li class="value-item">
                 <h3 class="value-item__title">Transparencia</h3>
-
                 <p class="value-item__description">
                   Información clara y coherente con la situación real de la
                   empresa y de cada servicio.
@@ -174,7 +183,6 @@
 
               <li class="value-item">
                 <h3 class="value-item__title">Profesionalismo</h3>
-
                 <p class="value-item__description">
                   Prestación responsable, supervisión y seguimiento de las
                   consignas acordadas.
@@ -186,121 +194,217 @@
       </section>
 
       <!-- Servicios -->
-      <section id="servicios" class="services">
+      <section
+        id="servicios"
+        class="services"
+        aria-labelledby="servicios-titulo"
+      >
         <div class="container">
           <header class="section-header">
             <p class="section-header__eyebrow">Nuestros servicios</p>
 
-            <h2 class="section-header__title">
+            <h2 id="servicios-titulo" class="section-header__title">
               Soluciones preventivas para distintas necesidades
             </h2>
 
             <p class="section-header__description">
-              Los servicios se definen de acuerdo con las características del
-              lugar, las necesidades identificadas y las consignas acordadas con
-              cada cliente.
+              Cada servicio se organiza de acuerdo con las características del
+              objetivo, las necesidades identificadas y las consignas acordadas
+              con el cliente.
             </p>
           </header>
 
-          <ul class="services__list">
-            <li class="service-item">
-              <h3 class="service-item__title">Vigilancia preventiva</h3>
+          <div class="services-catalog">
+            <div class="services-catalog__navigation">
+              <p class="services-catalog__label">Seleccioná un servicio</p>
 
-              <p class="service-item__description">
-                Presencia de personal orientada a prevenir riesgos, observar
-                situaciones relevantes y actuar conforme a las consignas
-                establecidas.
-              </p>
-            </li>
+              <div
+                class="services-catalog__tabs"
+                role="tablist"
+                aria-label="Servicios ofrecidos por NexoSegur"
+              >
+                <button
+                  id="service-tab-vigilancia"
+                  class="services-catalog__tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="service-panel"
+                  data-service="vigilancia"
+                >
+                  <span class="services-catalog__number">01</span>
+                  <span>Vigilancia preventiva</span>
+                </button>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Control de accesos</h3>
+                <button
+                  id="service-tab-accesos"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="accesos"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">02</span>
+                  <span>Control de accesos</span>
+                </button>
 
-              <p class="service-item__description">
-                Supervisión del ingreso y egreso de personas, vehículos y
-                elementos según las condiciones definidas para cada objetivo.
-              </p>
-            </li>
+                <button
+                  id="service-tab-instalaciones"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="instalaciones"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">03</span>
+                  <span>Custodia de instalaciones</span>
+                </button>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Custodia de instalaciones</h3>
+                <button
+                  id="service-tab-bienes"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="bienes"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">04</span>
+                  <span>Protección de bienes</span>
+                </button>
 
-              <p class="service-item__description">
-                Protección preventiva de establecimientos, espacios y
-                dependencias mediante presencia y control organizado.
-              </p>
-            </li>
+                <button
+                  id="service-tab-personas"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="personas"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">05</span>
+                  <span>Protección de personas</span>
+                </button>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Protección de bienes</h3>
+                <button
+                  id="service-tab-recorridos"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="recorridos"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">06</span>
+                  <span>Recorridos preventivos</span>
+                </button>
 
-              <p class="service-item__description">
-                Supervisión destinada a reducir riesgos sobre bienes materiales
-                y recursos ubicados dentro del objetivo.
-              </p>
-            </li>
+                <button
+                  id="service-tab-novedades"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="novedades"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">07</span>
+                  <span>Registro de novedades</span>
+                </button>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Protección de personas</h3>
+                <button
+                  id="service-tab-supervision"
+                  class="services-catalog__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="service-panel"
+                  data-service="supervision"
+                  tabindex="-1"
+                >
+                  <span class="services-catalog__number">08</span>
+                  <span>Supervisión de consignas</span>
+                </button>
+              </div>
+            </div>
 
-              <p class="service-item__description">
-                Acompañamiento preventivo orientado a preservar la seguridad de
-                personas dentro del alcance previamente acordado.
-              </p>
-            </li>
+            <article
+              id="service-panel"
+              class="services-catalog__detail"
+              role="tabpanel"
+              aria-labelledby="service-tab-vigilancia"
+              tabindex="0"
+            >
+              <div class="services-catalog__content">
+                <p id="service-category" class="services-catalog__eyebrow">
+                  Servicio preventivo
+                </p>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Recorridos preventivos</h3>
+                <h3 id="service-title" class="services-catalog__title">
+                  Vigilancia preventiva
+                </h3>
 
-              <p class="service-item__description">
-                Inspecciones periódicas del objetivo para detectar novedades,
-                riesgos o situaciones que requieran atención.
-              </p>
-            </li>
+                <p
+                  id="service-description"
+                  class="services-catalog__description"
+                >
+                  Presencia de personal orientada a prevenir riesgos, observar
+                  situaciones relevantes y actuar conforme a las consignas
+                  establecidas para cada objetivo.
+                </p>
 
-            <li class="service-item">
-              <h3 class="service-item__title">Registro de novedades</h3>
+                <ul
+                  id="service-features"
+                  class="services-catalog__features"
+                  aria-label="Características del servicio"
+                >
+                  <li>Presencia preventiva en el objetivo.</li>
+                  <li>Observación y detección de novedades.</li>
+                  <li>Actuación conforme a consignas acordadas.</li>
+                </ul>
 
-              <p class="service-item__description">
-                Documentación de hechos, observaciones e incidencias relevantes
-                ocurridas durante la prestación.
-              </p>
-            </li>
-
-            <li class="service-item">
-              <h3 class="service-item__title">Supervisión de consignas</h3>
-
-              <p class="service-item__description">
-                Seguimiento del cumplimiento de las instrucciones y condiciones
-                establecidas para cada servicio.
-              </p>
-            </li>
-          </ul>
+                <a
+                  class="button button--primary services-catalog__contact"
+                  href="https://wa.me/5493513581736"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Consultar por este servicio
+                </a>
+              </div>
+            </article>
+          </div>
 
           <div class="services__action">
-            <p>
-              ¿Necesitás seguridad para tu empresa, institución o propiedad?
-            </p>
+            <p>¿Necesitás orientación para definir el servicio adecuado?</p>
 
             <a
-              class="button button--primary"
+              class="button button--secondary"
               href="https://wa.me/5493513581736"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Consultar por WhatsApp
+              Hablar con NexoSegur
             </a>
           </div>
         </div>
       </section>
 
       <!-- Respaldo institucional -->
-      <section id="respaldo" class="support">
+      <section id="respaldo" class="support" aria-labelledby="respaldo-titulo">
         <div class="container">
           <header class="section-header">
             <p class="section-header__eyebrow">Respaldo institucional</p>
 
-            <h2 class="section-header__title">
+            <h2 id="respaldo-titulo" class="section-header__title">
               Formalidad y experiencia al servicio de cada objetivo
             </h2>
 
@@ -310,14 +414,15 @@
             </p>
           </header>
 
-          <ul class="support__list">
+          <ul
+            class="support__list"
+            aria-label="Elementos de respaldo institucional"
+          >
             <li class="card support-card">
               <div class="support-card__icon-placeholder" aria-hidden="true">
                 01
               </div>
-
               <h3 class="support-card__title">Habilitación formal</h3>
-
               <p class="support-card__description">
                 Empresa formalmente habilitada para desarrollar servicios de
                 seguridad privada en la provincia de Córdoba.
@@ -328,9 +433,7 @@
               <div class="support-card__icon-placeholder" aria-hidden="true">
                 02
               </div>
-
               <h3 class="support-card__title">Dirección Técnica</h3>
-
               <p class="support-card__description">
                 La actividad cuenta con una Dirección Técnica definida,
                 responsable del acompañamiento profesional de los servicios.
@@ -341,11 +444,9 @@
               <div class="support-card__icon-placeholder" aria-hidden="true">
                 03
               </div>
-
               <h3 class="support-card__title">Experiencia previa</h3>
-
               <p class="support-card__description">
-                La empresa se encuentra respaldada por la experiencia previa de
+                NexoSegur se encuentra respaldada por la experiencia previa de
                 sus integrantes en el sector de la seguridad privada.
               </p>
             </li>
@@ -354,12 +455,12 @@
       </section>
 
       <!-- Contacto -->
-      <section id="contacto" class="contact">
+      <section id="contacto" class="contact" aria-labelledby="contacto-titulo">
         <div class="container contact__container">
           <div class="contact__content">
             <p class="contact__eyebrow">Contacto</p>
 
-            <h2 class="contact__title">
+            <h2 id="contacto-titulo" class="contact__title">
               Conversemos sobre tu necesidad de seguridad
             </h2>
 
@@ -369,7 +470,7 @@
             </p>
           </div>
 
-          <div class="contact__action">
+          <address class="contact__action">
             <a
               class="button button--primary button--large"
               href="https://wa.me/5493513581736"
@@ -381,9 +482,9 @@
 
             <p class="contact__phone">
               WhatsApp oficial:
-              <a href="tel:+5493513581736"> 351 3581736 </a>
+              <a href="https://wa.me/5493513581736">351 3581736</a>
             </p>
-          </div>
+          </address>
         </div>
       </section>
     </main>
@@ -395,6 +496,8 @@
             class="site-footer__logo"
             src="assets/images/brand/nexosegur-logo-horizontal-white.webp"
             alt="NexoSegur Seguridad Privada"
+            loading="lazy"
+            decoding="async"
           />
 
           <p>
@@ -404,33 +507,17 @@
 
         <nav class="site-footer__navigation" aria-label="Navegación secundaria">
           <h2 class="site-footer__title">Navegación</h2>
-
           <ul>
-            <li>
-              <a href="#inicio">Inicio</a>
-            </li>
-
-            <li>
-              <a href="#nosotros">Nosotros</a>
-            </li>
-
-            <li>
-              <a href="#servicios">Servicios</a>
-            </li>
-
-            <li>
-              <a href="#respaldo">Respaldo</a>
-            </li>
-
-            <li>
-              <a href="#contacto">Contacto</a>
-            </li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#respaldo">Respaldo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
         <div class="site-footer__services">
           <h2 class="site-footer__title">Servicios</h2>
-
           <ul>
             <li>Vigilancia preventiva</li>
             <li>Control de accesos</li>
@@ -441,13 +528,11 @@
 
         <div class="site-footer__contact">
           <h2 class="site-footer__title">Contacto</h2>
-
           <address>
             <p>
               WhatsApp:
-              <a href="tel:+5493513581736"> 351 3581736 </a>
+              <a href="https://wa.me/5493513581736">351 3581736</a>
             </p>
-
             <p>Córdoba, Argentina</p>
           </address>
         </div>
@@ -458,10 +543,11 @@
           <p>
             © 2026 NexoSegur Seguridad Privada. Todos los derechos reservados.
           </p>
-
-          <a href="#inicio"> Volver al inicio </a>
+          <a href="#inicio">Volver al inicio</a>
         </div>
       </div>
     </footer>
+
+    <script src="assets/js/navigation.js"></script>
   </body>
 </html>
