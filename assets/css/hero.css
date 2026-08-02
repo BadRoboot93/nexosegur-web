@@ -63,7 +63,7 @@
 
   color: var(--color-on-dark);
 
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.8rem, 6.8vw, 4rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -110,6 +110,10 @@
   background-color: rgb(255 255 255 / 4%);
 }
 
+.hero__title--mobile {
+  display: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero__secondary-action:hover {
     color: var(--color-on-dark);
@@ -129,9 +133,9 @@
     background:
       linear-gradient(
         90deg,
-        rgb(8 29 63 / 94%) 0%,
-        rgb(8 29 63 / 78%) 48%,
-        rgb(8 29 63 / 34%) 100%
+        rgb(8 29 63 / 88%) 0%,
+        rgb(8 29 63 / 68%) 48%,
+        rgb(8 29 63 / 26%) 100%
       ),
       url("../images/hero/hero-nexosegur2.png") 62% center / cover no-repeat;
   }
@@ -149,8 +153,7 @@
   }
 
   .hero__title {
-    max-width: 10ch;
-
+    max-width: 10.5ch;
     font-size: clamp(2.5rem, 5.9vw, 3.5rem);
   }
 
@@ -160,8 +163,7 @@
   }
 
   .hero__description {
-    max-width: 42ch;
-
+    max-width: 36ch;
     font-size: clamp(0.98rem, 1.35vw, 1.15rem);
   }
 
@@ -183,9 +185,9 @@
     background:
       linear-gradient(
         180deg,
-        rgb(8 29 63 / 52%) 0%,
-        rgb(8 29 63 / 78%) 38%,
-        rgb(8 29 63 / 96%) 100%
+        rgb(8 29 63 / 42%) 0%,
+        rgb(8 29 63 / 68%) 38%,
+        rgb(8 29 63 / 88%) 100%
       ),
       url("../images/hero/hero-nexosegur2.png") 68% center / cover no-repeat;
   }
@@ -193,9 +195,7 @@
   .hero::before {
     background: linear-gradient(
       180deg,
-      rgb(8 29 63 / 8%) 0%,
-      rgb(8 29 63 / 24%) 38%,
-      rgb(8 29 63 / 70%) 100%
+      rgb(8 29 63 / 5%) rgb(8 29 63 / 18%) rgb(8 29 63 / 55%)
     );
   }
 
@@ -209,11 +209,19 @@
     max-width: none;
   }
 
+  .hero__title--desktop {
+    display: none;
+  }
+
+  .hero__title--mobile {
+    display: block;
+  }
+
   .hero__title {
-    max-width: 10.5ch;
+    max-width: 10ch;
     margin-bottom: var(--space-5);
 
-    font-size: clamp(2.4rem, 10.5vw, 3.35rem);
+    font-size: clamp(2.2rem, 6vw, 3rem);
     line-height: 0.97;
     letter-spacing: -0.035em;
   }
@@ -225,10 +233,10 @@
   }
 
   .hero__description {
-    max-width: 36ch;
+    max-width: 32ch;
     margin-bottom: var(--space-6);
 
-    font-size: 0.96rem;
+    font-size: clamp(0.94rem, 1.3vw, 1.08rem);
     line-height: 1.55;
   }
 
@@ -259,13 +267,16 @@
   }
 
   .hero__title {
-    font-size: clamp(2.35rem, 12vw, 3rem);
+    max-width: 9.5ch;
+    font-size: clamp(2rem, 6.2vw, 2.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
   }
 
   .hero__description {
-    max-width: 34ch;
-
-    font-size: 0.95rem;
+    max-width: 28ch;
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
+    line-height: 1.5;
   }
 
   .hero__actions .button {

@@ -134,3 +134,21 @@ Se decidió desarrollar un kit gráfico específico en un trabajo paralelo, sin 
 ## Próximo objetivo
 
 Finalizar la sección de Información institucional y continuar con la implementación de Servicios.
+
+## Bloque: Servicios
+
+### Decisiones
+
+- Se reutilizaron los componentes Container, Section Header y Card.
+- Se creó la especialización Service Card.
+- Los servicios se presentan en una cuadrícula única, sin categorías no definidas.
+- Se utilizaron dos columnas en escritorio y una columna en dispositivos pequeños.
+
+### Restricciones respetadas
+
+- Se presentan únicamente servicios validados.
+- No se incorporan funciones de cotización, contratación o evaluación particular.
+
+### Commit
+
+`feat: implement services section`s
