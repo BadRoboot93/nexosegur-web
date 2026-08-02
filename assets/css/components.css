@@ -440,23 +440,7 @@
   line-height: 1.65;
 }
 
-/* =======================================================
-   FOOTER
-======================================================= */
-
-.site-footer__title {
-  margin-bottom: var(--space-4);
-
-  color: var(--color-white);
-
-  font-size: 1rem;
-}
-
 @media (hover: hover) and (pointer: fine) {
-  .site-footer a:hover {
-    color: var(--color-accent-light);
-  }
-
   .services-catalog__tab:hover {
     border-color: var(--color-border);
 

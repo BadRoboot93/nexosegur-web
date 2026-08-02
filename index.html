@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
 
   <body>
@@ -494,52 +495,82 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container site-footer__container">
+        <!-- Marca -->
         <div class="site-footer__brand">
-          <img
-            class="site-footer__logo"
-            src="assets/images/brand/nexosegur-logo-horizontal-white.webp"
-            alt="NexoSegur Seguridad Privada"
-            loading="lazy"
-            decoding="async"
-          />
+          <a href="#inicio" class="site-footer__brand-link">
+            <span class="site-footer__brand-name">
+              <span class="site-footer__brand-primary">NEXO</span
+              ><span class="site-footer__brand-accent">SEGUR</span>
+            </span>
 
-          <p>
-            Seguridad privada con cercanía, transparencia y profesionalismo.
+            <span class="site-footer__brand-subtitle"> Seguridad Privada </span>
+          </a>
+
+          <p class="site-footer__description">
+            Seguridad privada con compromiso, cercanía y profesionalismo.
           </p>
         </div>
 
-        <nav class="site-footer__navigation" aria-label="Navegación secundaria">
-          <h2 class="site-footer__title">Navegación</h2>
-          <ul>
+        <!-- Accesos rápidos -->
+        <nav class="site-footer__navigation" aria-label="Accesos rápidos">
+          <h2 class="site-footer__title">Accesos rápidos</h2>
+
+          <ul class="site-footer__list">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#respaldo">Respaldo</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
-        <div class="site-footer__services">
-          <h2 class="site-footer__title">Servicios</h2>
-          <ul>
-            <li>Vigilancia preventiva</li>
-            <li>Control de accesos</li>
-            <li>Custodia de instalaciones</li>
-            <li>Recorridos preventivos</li>
-          </ul>
-        </div>
-
+        <!-- Contacto -->
         <div class="site-footer__contact">
           <h2 class="site-footer__title">Contacto</h2>
-          <address>
-            <p>
-              WhatsApp:
-              <a href="https://wa.me/5493513581736">351 3581736</a>
-            </p>
-            <p>Córdoba, Argentina</p>
+
+          <address class="site-footer__address">
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">WhatsApp</span>
+              <a href="https://wa.me/5493513581736"> +54 9 351 358-1736 </a>
+            </div>
+
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">
+                Teléfono alternativo
+              </span>
+
+              <a href="tel:+5493513581470"> +54 9 351 358-1470 </a>
+            </div>
+
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">Correo</span>
+              <a href="mailto:nexosegur@gmail.com"> nexosegur@gmail.com </a>
+            </div>
           </address>
+        </div>
+
+        <!-- Empresa -->
+        <div class="site-footer__company">
+          <h2 class="site-footer__title">Empresa</h2>
+
+          <div class="site-footer__company-details">
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">Ubicación</span>
+              <span>Córdoba Capital, Argentina</span>
+            </div>
+
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">Habilitación</span>
+              <span>Empresa habilitada</span>
+            </div>
+
+            <div class="site-footer__contact-item">
+              <span class="site-footer__contact-label">Atención</span>
+              <span>Lunes a Viernes</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -548,7 +579,6 @@
           <p>
             © 2026 NexoSegur Seguridad Privada. Todos los derechos reservados.
           </p>
-          <a href="#inicio">Volver al inicio</a>
         </div>
       </div>
     </footer>

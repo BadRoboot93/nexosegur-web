@@ -200,64 +200,6 @@
   font-weight: 700;
 }
 
-/* Footer */
-.site-footer {
-  color: rgb(255 255 255 / 74%);
-  background-color: #06152f;
-}
-
-.site-footer__container {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 1fr 0.9fr;
-  gap: 3rem;
-
-  padding-block: 4rem;
-}
-
-.site-footer__brand {
-  max-width: 320px;
-}
-
-.site-footer__logo {
-  width: 210px;
-  height: auto;
-  margin-bottom: 1.25rem;
-}
-
-.site-footer__brand p {
-  line-height: 1.7;
-}
-
-.site-footer__navigation ul,
-.site-footer__services ul,
-.site-footer__contact address {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.site-footer__navigation a {
-  display: inline-block;
-}
-
-.site-footer__contact a {
-  color: var(--color-text-light);
-}
-
-.site-footer__bottom {
-  border-top: 1px solid rgb(255 255 255 / 12%);
-}
-
-.site-footer__bottom-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-
-  padding-block: 1.25rem;
-
-  font-size: 0.88rem;
-}
-
 /* Tableta */
 @media (max-width: 64rem) {
   .institutional__content {
@@ -277,10 +219,6 @@
   }
 
   .support__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .site-footer__container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -351,19 +289,6 @@
 
   .contact__action {
     padding: 1.5rem;
-  }
-
-  .site-footer__container {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-
-    padding-block: 3rem;
-  }
-
-  .site-footer__bottom-container {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
   }
 }
 
