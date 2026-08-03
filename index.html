@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
 
@@ -462,58 +463,50 @@
 
       <!-- Contacto -->
       <section id="contacto" class="contact" aria-labelledby="contacto-titulo">
-        <div class="container contact__container">
-          <div class="contact__content">
-            <p class="contact__eyebrow">Contacto</p>
-
-            <h2 id="contacto-titulo" class="contact__title">
-              Conversemos sobre tu necesidad de seguridad
-            </h2>
-
-            <p class="contact__description">
-              Podés comunicarte directamente con NexoSegur para realizar una
-              consulta y coordinar una primera evaluación.
-            </p>
+        <div class="contact__layout">
+          <!-- Imagen -->
+          <div class="contact__media" aria-hidden="true">
+            <img
+              class="contact__image"
+              src="assets/images/contact/contact-meeting.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
-          <address class="contact__action">
-            <a
-              class="button button--primary button--large"
-              href="https://wa.me/5493513581736"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Iniciar conversación por WhatsApp
-            </a>
+          <!-- Contenido -->
+          <div class="contact__panel">
+            <div class="contact__content">
+              <p class="contact__eyebrow">Contacto</p>
 
-            <p class="contact__phone">
-              WhatsApp oficial:
-              <a href="https://wa.me/5493513581736">351 3581736</a>
-            </p>
-          </address>
+              <h2 id="contacto-titulo" class="contact__title">
+                Conversemos sobre tu necesidad de seguridad
+              </h2>
+
+              <p class="contact__description">
+                Podés comunicarte directamente con NexoSegur para realizar una
+                consulta y coordinar una primera evaluación.
+              </p>
+
+              <div class="contact__action">
+                <a
+                  class="button button--primary button--large"
+                  href="https://wa.me/5493513581736"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Iniciar conversación
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <div class="container site-footer__container">
-        <!-- Marca -->
-        <div class="site-footer__brand">
-          <a href="#inicio" class="site-footer__brand-link">
-            <span class="site-footer__brand-name">
-              <span class="site-footer__brand-primary">NEXO</span
-              ><span class="site-footer__brand-accent">SEGUR</span>
-            </span>
-
-            <span class="site-footer__brand-subtitle"> Seguridad Privada </span>
-          </a>
-
-          <p class="site-footer__description">
-            Seguridad privada con compromiso, cercanía y profesionalismo.
-          </p>
-        </div>
-
         <!-- Accesos rápidos -->
         <nav class="site-footer__navigation" aria-label="Accesos rápidos">
           <h2 class="site-footer__title">Accesos rápidos</h2>
@@ -540,7 +533,6 @@
               <span class="site-footer__contact-label">
                 Teléfono alternativo
               </span>
-
               <a href="tel:+5493513581470"> +54 9 351 358-1470 </a>
             </div>
 
@@ -571,6 +563,18 @@
               <span>Lunes a Viernes</span>
             </div>
           </div>
+        </div>
+
+        <!-- Marca -->
+        <div class="site-footer__brand">
+          <a href="#inicio" class="site-footer__brand-link">
+            <span class="site-footer__brand-name">
+              <span class="site-footer__brand-primary">NEXO</span
+              ><span class="site-footer__brand-accent">SEGUR</span>
+            </span>
+
+            <span class="site-footer__brand-subtitle"> Seguridad Privada </span>
+          </a>
         </div>
       </div>
 

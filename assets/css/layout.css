@@ -125,81 +125,6 @@
   gap: 1.5rem;
 }
 
-/* Contacto */
-.contact {
-  padding-block: clamp(4rem, 7vw, 6rem);
-
-  color: var(--color-text-light);
-
-  background: linear-gradient(
-    135deg,
-    var(--color-primary-dark),
-    var(--color-primary)
-  );
-}
-
-.contact__container {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
-  align-items: center;
-  gap: 4rem;
-}
-
-.contact__eyebrow {
-  color: #8fc5ff;
-}
-
-.contact__title {
-  max-width: 720px;
-  margin-bottom: 1.25rem;
-
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.08;
-}
-
-.contact__description {
-  max-width: 62ch;
-
-  color: rgb(255 255 255 / 78%);
-  font-size: 1.08rem;
-}
-
-.contact__action {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-
-  padding: 2rem;
-
-  border: 1px solid rgb(255 255 255 / 18%);
-  border-radius: var(--radius-large);
-
-  background-color: rgb(255 255 255 / 8%);
-}
-
-.contact__action .button--primary {
-  width: 100%;
-
-  color: var(--color-primary);
-  background-color: var(--color-text-light);
-}
-
-.contact__action .button--primary:hover {
-  color: var(--color-text-light);
-  background-color: var(--color-accent);
-}
-
-.contact__phone {
-  color: rgb(255 255 255 / 76%);
-  font-size: 0.95rem;
-}
-
-.contact__phone a {
-  color: var(--color-text-light);
-  font-weight: 700;
-}
-
 /* Tableta */
 @media (max-width: 64rem) {
   .institutional__content {
@@ -280,15 +205,6 @@
 
   .support__list {
     grid-template-columns: 1fr;
-  }
-
-  .contact__container {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .contact__action {
-    padding: 1.5rem;
   }
 }
 
