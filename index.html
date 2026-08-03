@@ -78,12 +78,10 @@
       <section id="inicio" class="hero">
         <div class="container hero__container">
           <div class="hero__content">
-            <h1 class="hero__title hero__title--desktop">
-              PROTEGEMOS LO QUE MÁS IMPORTA
-            </h1>
-
-            <h1 class="hero__title hero__title--mobile">
-              PROTEGEMOS LO QUE IMPORTA
+            <h1 class="hero__title">
+              PROTEGEMOS LO QUE
+              <span class="hero__title-emphasis">MÁS</span>
+              IMPORTA
             </h1>
 
             <div class="hero__divider" aria-hidden="true"></div>
@@ -507,83 +505,157 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container site-footer__container">
-        <!-- Marca -->
-        <div class="site-footer__brand">
-          <a href="#inicio" class="site-footer__brand-link">
-            <span class="site-footer__brand-name">
-              <span class="site-footer__brand-primary">NEXO</span
-              ><span class="site-footer__brand-accent">SEGUR</span>
-            </span>
-
-            <span class="site-footer__brand-subtitle"> Seguridad Privada </span>
-          </a>
-
-          <p class="site-footer__description">
-            Seguridad privada con compromiso, cercanía y profesionalismo.
-          </p>
-        </div>
-
-        <!-- Accesos rápidos -->
-        <nav class="site-footer__navigation" aria-label="Accesos rápidos">
-          <h2 class="site-footer__title">Accesos rápidos</h2>
-
-          <ul class="site-footer__list">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-
-        <!-- Contacto -->
-        <div class="site-footer__contact">
-          <h2 class="site-footer__title">Contacto</h2>
-
-          <address class="site-footer__address">
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">WhatsApp</span>
-              <a href="https://wa.me/5493513581736"> +54 9 351 358-1736 </a>
-            </div>
-
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">
-                Teléfono alternativo
+      <!-- Contenido principal -->
+      <div class="site-footer__main">
+        <div class="container site-footer__container">
+          <!-- Marca -->
+          <div class="site-footer__column site-footer__brand">
+            <a
+              href="#inicio"
+              class="site-footer__brand-link"
+              aria-label="NexoSegur Seguridad Privada, volver al inicio"
+            >
+              <span class="site-footer__brand-name">
+                <span class="site-footer__brand-primary">NEXO</span
+                ><span class="site-footer__brand-accent">SEGUR</span>
               </span>
 
-              <a href="tel:+5493513581470"> +54 9 351 358-1470 </a>
-            </div>
+              <span class="site-footer__brand-subtitle">
+                Seguridad Privada
+              </span>
+            </a>
 
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">Correo</span>
-              <a href="mailto:nexosegur@gmail.com"> nexosegur@gmail.com </a>
-            </div>
-          </address>
-        </div>
+            <p class="site-footer__description">
+              Seguridad privada con compromiso, cercanía y profesionalismo.
+            </p>
+          </div>
 
-        <!-- Empresa -->
-        <div class="site-footer__company">
-          <h2 class="site-footer__title">Empresa</h2>
+          <!-- Accesos rápidos -->
+          <nav
+            class="site-footer__column site-footer__navigation"
+            aria-label="Accesos rápidos"
+          >
+            <h2 class="site-footer__title">Accesos rápidos</h2>
 
-          <div class="site-footer__company-details">
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">Ubicación</span>
-              <span>Córdoba Capital, Argentina</span>
-            </div>
+            <ul class="site-footer__list">
+              <li>
+                <a href="#inicio">
+                  <i
+                    class="site-footer__icon"
+                    data-lucide="house"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
 
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">Habilitación</span>
-              <span>Empresa habilitada</span>
-            </div>
+              <li>
+                <a href="#nosotros">
+                  <i
+                    class="site-footer__icon"
+                    data-lucide="users"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Nosotros</span>
+                </a>
+              </li>
 
-            <div class="site-footer__contact-item">
-              <span class="site-footer__contact-label">Atención</span>
-              <span>Lunes a Viernes</span>
+              <li>
+                <a href="#servicios">
+                  <i
+                    class="site-footer__icon"
+                    data-lucide="briefcase-business"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Servicios</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contacto -->
+          <div class="site-footer__column site-footer__contact">
+            <h2 class="site-footer__title">Contacto</h2>
+
+            <address class="site-footer__contact-list">
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="message-circle"
+                  aria-hidden="true"
+                ></i>
+
+                <a
+                  href="https://wa.me/5493513581736"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +54 9 351 358-1736
+                </a>
+              </div>
+
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="phone"
+                  aria-hidden="true"
+                ></i>
+
+                <a href="tel:+5493513581470"> +54 9 351 358-1470 </a>
+              </div>
+
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="mail"
+                  aria-hidden="true"
+                ></i>
+
+                <a href="mailto:nexosegur@gmail.com"> nexosegur@gmail.com </a>
+              </div>
+            </address>
+          </div>
+
+          <!-- Empresa -->
+          <div class="site-footer__column site-footer__company">
+            <h2 class="site-footer__title">Empresa</h2>
+
+            <div class="site-footer__company-list">
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="map-pin"
+                  aria-hidden="true"
+                ></i>
+
+                <span>Córdoba Capital, Argentina</span>
+              </div>
+
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="badge-check"
+                  aria-hidden="true"
+                ></i>
+
+                <span>Empresa habilitada</span>
+              </div>
+
+              <div class="site-footer__contact-item">
+                <i
+                  class="site-footer__icon"
+                  data-lucide="clock-3"
+                  aria-hidden="true"
+                ></i>
+
+                <span>Lunes a Viernes</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Copyright -->
       <div class="site-footer__bottom">
         <div class="container site-footer__bottom-container">
           <p>
@@ -594,5 +666,14 @@
     </footer>
 
     <script src="assets/js/navigation.js"></script>
+
+    <!-- TODO: fijar versión de Lucide antes de producción -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    </script>
   </body>
 </html>

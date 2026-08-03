@@ -209,12 +209,8 @@
     max-width: none;
   }
 
-  .hero__title--desktop {
+  .hero__title-emphasis {
     display: none;
-  }
-
-  .hero__title--mobile {
-    display: block;
   }
 
   .hero__title {

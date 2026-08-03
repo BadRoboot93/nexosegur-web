@@ -7,27 +7,35 @@
   background-color: var(--color-primary-dark);
 }
 
+/* =======================================================
+   MAIN
+======================================================= */
+
+.site-footer__main {
+  background-color: var(--color-primary-dark);
+}
+
 .site-footer__container {
   display: grid;
   grid-template-columns:
-    minmax(16rem, 1.25fr)
-    minmax(9rem, 0.65fr)
-    minmax(14rem, 0.95fr)
-    minmax(13rem, 0.9fr);
+    minmax(14rem, 1.25fr)
+    minmax(9rem, 0.75fr)
+    minmax(14rem, 1fr)
+    minmax(13rem, 0.95fr);
 
   align-items: start;
-  gap: var(--space-6);
+  gap: clamp(var(--space-5), 4vw, var(--space-8));
 
-  padding-block: var(--space-5);
+  padding-block: var(--space-7);
+}
+
+.site-footer__column {
+  min-width: 0;
 }
 
 /* =======================================================
    BRAND
 ======================================================= */
-
-.site-footer__brand {
-  max-width: 22rem;
-}
 
 .site-footer__brand-link {
   display: inline-flex;
@@ -64,115 +72,151 @@
 }
 
 .site-footer__description {
-  max-width: 34ch;
+  max-width: 30ch;
 
-  color: var(--color-on-dark-muted);
+  color: var(--color-on-dark-subtle);
 
   font-size: 0.92rem;
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 /* =======================================================
-   COLUMNS
+   TITLES
 ======================================================= */
 
 .site-footer__title {
-  margin-bottom: var(--space-3);
-
-  color: var(--color-accent-light);
-
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.site-footer__list {
-  display: grid;
-  gap: 0.55rem;
-}
-
-.site-footer__list a {
   position: relative;
 
-  display: inline-flex;
-  align-items: center;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-2);
 
-  width: fit-content;
-
-  color: var(--color-on-dark-subtle);
-
-  font-size: 0.95rem;
-}
-
-.site-footer__address,
-.site-footer__company-details {
-  display: grid;
-  align-content: start;
-  gap: var(--space-4);
-}
-
-.site-footer__list a,
-.site-footer__address a {
-  color: var(--color-on-dark-subtle);
-  transition: color 0.2s ease;
-}
-
-.site-footer__address a {
-  overflow-wrap: anywhere;
-}
-
-.site-footer__contact-item {
-  display: grid;
-  gap: 0.25rem;
-
-  color: var(--color-on-dark-subtle);
-
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-.site-footer__contact-label {
   color: var(--color-on-dark);
 
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
+.site-footer__title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 2.5rem;
+  height: 2px;
+
+  background-color: var(--color-accent);
+
+  content: "";
+}
+
+/* =======================================================
+   LISTS
+======================================================= */
+
+.site-footer__list,
+.site-footer__contact-list,
+.site-footer__company-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* =======================================================
+   NAVIGATION
+======================================================= */
+
+.site-footer__list a {
+  display: grid;
+  grid-template-columns: 1.125rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.7rem;
+
+  width: fit-content;
+  min-width: 0;
+
+  color: var(--color-on-dark-subtle);
+
+  font-size: 0.92rem;
+  line-height: 1.5;
+
+  transition: color var(--transition-fast);
+}
+
+/* =======================================================
+   CONTACT AND COMPANY
+======================================================= */
+
+.site-footer__contact-item {
+  display: grid;
+  grid-template-columns: 1.125rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.7rem;
+
+  min-width: 0;
+}
+
+.site-footer__icon {
+  width: 1rem;
+  height: 1rem;
+
+  color: var(--color-accent-light);
+
+  stroke-width: 1.8;
+}
+
 .site-footer__contact-item > a,
-.site-footer__contact-item > span:not(.site-footer__contact-label) {
+.site-footer__contact-item > span {
+  min-width: 0;
+
   color: var(--color-on-dark-subtle);
 
   font-size: 0.92rem;
   font-weight: 400;
   line-height: 1.5;
+
+  overflow-wrap: anywhere;
 }
 
+.site-footer__contact-item > a {
+  transition: color var(--transition-fast);
+}
+
+/* =======================================================
+   BOTTOM
+======================================================= */
+
 .site-footer__bottom {
-  border-top: 1px solid rgb(255 255 255 / 10%);
+  background-color: rgb(5 24 54 / 60%);
 }
 
 .site-footer__bottom-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
 
   padding-block: var(--space-3);
 
   color: var(--color-on-dark-subtle);
 
   font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
-@media (hover: hover) {
+/* =======================================================
+   INTERACTION
+======================================================= */
+
+@media (hover: hover) and (pointer: fine) {
   .site-footer__list a:hover,
-  .site-footer__address a:hover {
-    color: var(--color-on-dark);
+  .site-footer__contact-item > a:hover {
+    color: var(--color-accent-light);
   }
 }
 
 /* =======================================================
-   TABLET AND MOBILE
+   TABLET
 ======================================================= */
 
 @media (max-width: 60rem) {
@@ -182,45 +226,47 @@
     column-gap: var(--space-8);
     row-gap: var(--space-7);
 
-    padding-block: var(--space-5);
-  }
-
-  .site-footer__brand {
-    max-width: 22rem;
-  }
-
-  .site-footer__navigation,
-  .site-footer__contact,
-  .site-footer__company {
-    min-width: 0;
-  }
-
-  .site-footer__bottom-container {
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-/* =======================================================
-   SMALL MOBILE
-======================================================= */
-
-@media (max-width: 24rem) {
-  .site-footer__container {
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-
-    padding-block: var(--space-4);
-  }
-
-  .site-footer__brand,
-  .site-footer__navigation,
-  .site-footer__contact,
-  .site-footer__company {
-    max-width: none;
+    padding-block: var(--space-6);
   }
 
   .site-footer__description {
     max-width: 34ch;
+  }
+}
+
+/* =======================================================
+   MOBILE
+======================================================= */
+
+@media (max-width: 40rem) {
+  .site-footer__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+
+    padding-block: var(--space-5);
+  }
+
+  .site-footer__brand-link {
+    margin-bottom: var(--space-3);
+  }
+
+  .site-footer__description {
+    max-width: 36ch;
+  }
+
+  .site-footer__title {
+    margin-bottom: var(--space-4);
+  }
+
+  .site-footer__list,
+  .site-footer__contact-list,
+  .site-footer__company-list {
+    gap: var(--space-3);
+  }
+
+  .site-footer__bottom-container {
+    padding-inline: var(--container-padding);
+
+    font-size: 0.74rem;
   }
 }
