@@ -9,39 +9,16 @@
 
 .site-footer__container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    minmax(16rem, 1.25fr)
+    minmax(9rem, 0.65fr)
+    minmax(14rem, 0.95fr)
+    minmax(13rem, 0.9fr);
 
-  grid-template-areas:
-    "brand brand brand"
-    "contact navigation company";
+  align-items: start;
+  gap: var(--space-6);
 
-  width: min(calc(100% - (var(--container-padding) * 2)), 52rem);
-
-  column-gap: clamp(var(--space-6), 5vw, var(--space-8));
-  row-gap: var(--space-5);
-
-  margin-inline: auto;
   padding-block: var(--space-5);
-}
-
-.site-footer__navigation {
-  grid-area: navigation;
-}
-
-.site-footer__contact {
-  grid-area: contact;
-}
-
-.site-footer__company {
-  grid-area: company;
-}
-
-.site-footer__navigation,
-.site-footer__contact,
-.site-footer__company {
-  width: 100%;
-  max-width: 14rem;
-  justify-self: start;
 }
 
 /* =======================================================
@@ -49,25 +26,18 @@
 ======================================================= */
 
 .site-footer__brand {
-  grid-area: brand;
-
-  display: flex;
-  justify-content: center;
-
-  margin-top: 0;
-  margin-bottom: var(--space-2);
+  max-width: 22rem;
 }
 
 .site-footer__brand-link {
   display: inline-flex;
   flex-direction: column;
 
-  margin-bottom: 0;
-  text-align: center;
+  margin-bottom: var(--space-4);
 }
 
 .site-footer__brand-name {
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
@@ -91,6 +61,15 @@
   letter-spacing: 0.28em;
   line-height: 1;
   text-transform: uppercase;
+}
+
+.site-footer__description {
+  max-width: 34ch;
+
+  color: var(--color-on-dark-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 /* =======================================================
@@ -134,7 +113,6 @@
 .site-footer__list a,
 .site-footer__address a {
   color: var(--color-on-dark-subtle);
-
   transition: color 0.2s ease;
 }
 
@@ -170,28 +148,23 @@
   line-height: 1.5;
 }
 
-/* =======================================================
-   FOOTER BOTTOM
-======================================================= */
-
 .site-footer__bottom {
   border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
 .site-footer__bottom-container {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
 
   padding-block: var(--space-3);
 
   color: var(--color-on-dark-subtle);
 
   font-size: 0.78rem;
-  text-align: center;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
   .site-footer__list a:hover,
   .site-footer__address a:hover {
     color: var(--color-on-dark);
@@ -199,53 +172,27 @@
 }
 
 /* =======================================================
-   TABLET
+   TABLET AND MOBILE
 ======================================================= */
 
-@media (max-width: 54rem) {
-  .site-footer__container {
-    grid-template-columns:
-      minmax(8rem, 0.75fr)
-      minmax(12rem, 1fr)
-      minmax(11rem, 0.9fr);
-
-    column-gap: var(--space-6);
-  }
-
-  .site-footer__bottom-container {
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-/* =======================================================
-   MOBILE
-======================================================= */
-
-@media (max-width: 40rem) {
-  .site-footer__navigation {
-    display: none;
-  }
-
+@media (max-width: 60rem) {
   .site-footer__container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    grid-template-areas:
-      "contact company"
-      "brand brand";
+    column-gap: var(--space-8);
+    row-gap: var(--space-7);
 
-    column-gap: var(--space-5);
-    row-gap: var(--space-6);
+    padding-block: var(--space-5);
   }
 
+  .site-footer__brand {
+    max-width: 22rem;
+  }
+
+  .site-footer__navigation,
   .site-footer__contact,
   .site-footer__company {
     min-width: 0;
-  }
-
-  .site-footer__contact-item > a,
-  .site-footer__contact-item > span:not(.site-footer__contact-label) {
-    overflow-wrap: anywhere;
   }
 
   .site-footer__bottom-container {
@@ -261,18 +208,19 @@
 @media (max-width: 24rem) {
   .site-footer__container {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
 
-    grid-template-areas:
-      "contact"
-      "company"
-      "brand";
-
-    gap: var(--space-5);
+    padding-block: var(--space-4);
   }
 
   .site-footer__brand,
+  .site-footer__navigation,
   .site-footer__contact,
   .site-footer__company {
     max-width: none;
+  }
+
+  .site-footer__description {
+    max-width: 34ch;
   }
 }
