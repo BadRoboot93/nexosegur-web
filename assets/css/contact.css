@@ -181,14 +181,12 @@
   }
 
   .contact__panel {
-    width: 100%;
     margin-left: 0;
 
     padding: var(--space-6) var(--container-padding) var(--space-7);
   }
 
   .contact__content {
-    width: 100%;
     max-width: none;
   }
 
@@ -233,9 +231,5 @@
   .contact__title {
     max-width: 18ch;
     font-size: clamp(1.9rem, 9vw, 2.4rem);
-  }
-
-  .contact__description {
-    max-width: 100%;
   }
 }

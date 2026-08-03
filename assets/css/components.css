@@ -135,7 +135,6 @@
   text-align: center;
 }
 
-.section-header__eyebrow,
 .contact__eyebrow {
   margin-bottom: var(--space-3);
 
@@ -152,6 +151,7 @@
 
   color: var(--color-primary);
 
+  text-wrap: balance;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.1;
 }
@@ -159,7 +159,9 @@
 .section-header__description {
   color: var(--color-text-muted);
 
+  text-wrap: pretty;
   font-size: 1.08rem;
+  line-height: 1.7;
 }
 
 /* =======================================================
@@ -276,7 +278,7 @@
 
 .services-catalog__tab {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: var(--space-4);
 

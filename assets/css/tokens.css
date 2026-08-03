@@ -97,3 +97,9 @@
   --color-on-dark-muted: rgb(255 255 255 / 86%);
   --color-on-dark-subtle: rgb(255 255 255 / 68%);
 }
+
+@media (max-width: 26rem) {
+  :root {
+    --container-padding: 1rem;
+  }
+}

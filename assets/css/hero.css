@@ -110,10 +110,6 @@
   background-color: rgb(255 255 255 / 4%);
 }
 
-.hero__title--mobile {
-  display: none;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .hero__secondary-action:hover {
     color: var(--color-on-dark);
@@ -195,7 +191,9 @@
   .hero::before {
     background: linear-gradient(
       180deg,
-      rgb(8 29 63 / 5%) rgb(8 29 63 / 18%) rgb(8 29 63 / 55%)
+      rgb(8 29 63 / 5%) 0%,
+      rgb(8 29 63 / 18%) 38%,
+      rgb(8 29 63 / 55%) 100%
     );
   }
 
@@ -255,11 +253,6 @@
 @media (max-width: 30rem) {
   .hero {
     background-position: 70% center;
-  }
-
-  .hero__container {
-    padding-top: var(--space-7);
-    padding-bottom: var(--space-6);
   }
 
   .hero__title {
