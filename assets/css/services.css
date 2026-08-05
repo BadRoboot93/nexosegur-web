@@ -23,6 +23,16 @@
   padding: 1.5rem 1rem 2.5rem;
 
   touch-action: pan-y;
+  cursor: grab;
+}
+
+.services-slider__viewport.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.services-slider__track.is-dragging {
+  transition: none;
 }
 
 .services-slider__track {
