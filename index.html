@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
@@ -219,186 +220,192 @@
             </p>
           </header>
 
-          <div class="services-catalog">
-            <div class="services-catalog__navigation">
-              <p class="services-catalog__label">Seleccioná un servicio</p>
-
-              <div
-                class="services-catalog__tabs"
-                role="tablist"
-                aria-label="Servicios ofrecidos por NexoSegur"
-              >
-                <button
-                  id="service-tab-vigilancia"
-                  class="services-catalog__tab is-active"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls="service-panel"
+          <div
+            class="services-slider"
+            role="region"
+            aria-labelledby="servicios-titulo"
+          >
+            <div class="services-slider__viewport">
+              <div class="services-slider__track">
+                <!-- Servicio 1 -->
+                <article
+                  class="service-card"
                   data-service="vigilancia"
+                  style="
+                    --service-image: url(&quot;../images/services/vigilancia-custodia.webp&quot;);
+                  "
                 >
-                  <span class="services-catalog__number">01</span>
-                  <span>Vigilancia preventiva</span>
-                </button>
+                  <div class="service-card__content">
+                    <p class="service-card__eyebrow">Servicio preventivo</p>
 
-                <button
-                  id="service-tab-accesos"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
+                    <h3 class="service-card__title">Vigilancia y custodia</h3>
+
+                    <p class="service-card__description">
+                      Presencia de personal orientada a prevenir riesgos,
+                      resguardar instalaciones y actuar conforme a las consignas
+                      establecidas para cada objetivo.
+                    </p>
+
+                    <ul class="service-card__features">
+                      <li>Presencia preventiva.</li>
+                      <li>Recorridos y control de instalaciones.</li>
+                      <li>Registro de novedades relevantes.</li>
+                    </ul>
+
+                    <a
+                      class="button button--primary service-card__contact"
+                      href="https://wa.me/5493513581736"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Consultar por el servicio de Vigilancia y custodia"
+                    >
+                      Consultar por este servicio
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article
+                  class="service-card"
                   data-service="accesos"
-                  tabindex="-1"
+                  style="
+                    --service-image: url(&quot;../images/services/control-accesos.webp&quot;);
+                  "
                 >
-                  <span class="services-catalog__number">02</span>
-                  <span>Control de accesos</span>
-                </button>
+                  <div class="service-card__content">
+                    <p class="service-card__eyebrow">Control preventivo</p>
 
-                <button
-                  id="service-tab-instalaciones"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
-                  data-service="instalaciones"
-                  tabindex="-1"
-                >
-                  <span class="services-catalog__number">03</span>
-                  <span>Custodia de instalaciones</span>
-                </button>
+                    <h3 class="service-card__title">Control de accesos</h3>
 
-                <button
-                  id="service-tab-bienes"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
+                    <p class="service-card__description">
+                      Organización y supervisión del ingreso y egreso de
+                      personas, vehículos y proveedores conforme a las consignas
+                      definidas.
+                    </p>
+
+                    <ul class="service-card__features">
+                      <li>Verificación de ingresos y egresos.</li>
+                      <li>Control de personas y vehículos.</li>
+                      <li>Registro de movimientos relevantes.</li>
+                    </ul>
+
+                    <a
+                      class="button button--primary service-card__contact"
+                      href="https://wa.me/5493513581736"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Consultar por el servicio de Control de accesos"
+                    >
+                      Consultar por este servicio
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article
+                  class="service-card"
                   data-service="bienes"
-                  tabindex="-1"
+                  style="
+                    --service-image: url(&quot;../images/services/proteccion-bienes.webp&quot;);
+                  "
                 >
-                  <span class="services-catalog__number">04</span>
-                  <span>Protección de bienes</span>
-                </button>
+                  <div class="service-card__content">
+                    <p class="service-card__eyebrow">Protección física</p>
 
-                <button
-                  id="service-tab-personas"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
-                  data-service="personas"
-                  tabindex="-1"
-                >
-                  <span class="services-catalog__number">05</span>
-                  <span>Protección de personas</span>
-                </button>
+                    <h3 class="service-card__title">Protección de bienes</h3>
 
-                <button
-                  id="service-tab-recorridos"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
-                  data-service="recorridos"
-                  tabindex="-1"
-                >
-                  <span class="services-catalog__number">06</span>
-                  <span>Recorridos preventivos</span>
-                </button>
+                    <p class="service-card__description">
+                      Medidas preventivas orientadas al resguardo de bienes,
+                      recursos e instalaciones frente a riesgos identificados.
+                    </p>
 
-                <button
-                  id="service-tab-novedades"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
-                  data-service="novedades"
-                  tabindex="-1"
-                >
-                  <span class="services-catalog__number">07</span>
-                  <span>Registro de novedades</span>
-                </button>
+                    <ul class="service-card__features">
+                      <li>Resguardo de bienes e instalaciones.</li>
+                      <li>Prevención de pérdidas y daños.</li>
+                      <li>Actuación conforme a consignas.</li>
+                    </ul>
 
-                <button
-                  id="service-tab-supervision"
-                  class="services-catalog__tab"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="service-panel"
-                  data-service="supervision"
-                  tabindex="-1"
+                    <a
+                      class="button button--primary service-card__contact"
+                      href="https://wa.me/5493513581736"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Consultar por el servicio de Protección de bienes"
+                    >
+                      Consultar por este servicio
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Servicio 4 -->
+                <article
+                  class="service-card"
+                  data-service="eventos"
+                  style="
+                    --service-image: url(&quot;../images/services/seguridad-eventos.webp&quot;);
+                  "
                 >
-                  <span class="services-catalog__number">08</span>
-                  <span>Supervisión de consignas</span>
-                </button>
+                  <div class="service-card__content">
+                    <p class="service-card__eyebrow">Cobertura preventiva</p>
+
+                    <h3 class="service-card__title">Seguridad para eventos</h3>
+
+                    <p class="service-card__description">
+                      Presencia de personal destinada a ordenar accesos,
+                      prevenir incidentes y acompañar el desarrollo seguro de
+                      cada evento.
+                    </p>
+
+                    <ul class="service-card__features">
+                      <li>Control de accesos.</li>
+                      <li>Prevención y detección de incidentes.</li>
+                      <li>Coordinación según características del evento.</li>
+                    </ul>
+
+                    <a
+                      class="button button--primary service-card__contact"
+                      href="https://wa.me/5493513581736"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Consultar por el servicio de Seguridad para eventos"
+                    >
+                      Consultar por este servicio
+                    </a>
+                  </div>
+                </article>
               </div>
             </div>
 
-            <article
-              id="service-panel"
-              class="services-catalog__detail"
-              role="tabpanel"
-              aria-labelledby="service-tab-vigilancia"
-              tabindex="0"
+            <!-- Indicadores -->
+            <div
+              class="services-slider__pagination"
+              aria-label="Seleccionar servicio"
             >
-              <div class="services-catalog__content">
-                <p id="service-category" class="services-catalog__eyebrow">
-                  Servicio preventivo
-                </p>
+              <button
+                class="services-slider__dot is-active"
+                type="button"
+                aria-label="Ir a Vigilancia y custodia"
+                aria-current="true"
+              ></button>
 
-                <h3 id="service-title" class="services-catalog__title">
-                  Vigilancia preventiva
-                </h3>
+              <button
+                class="services-slider__dot"
+                type="button"
+                aria-label="Ir a Control de accesos"
+              ></button>
 
-                <p
-                  id="service-description"
-                  class="services-catalog__description"
-                >
-                  Presencia de personal orientada a prevenir riesgos, observar
-                  situaciones relevantes y actuar conforme a las consignas
-                  establecidas para cada objetivo.
-                </p>
+              <button
+                class="services-slider__dot"
+                type="button"
+                aria-label="Ir a Protección de bienes"
+              ></button>
 
-                <ul
-                  id="service-features"
-                  class="services-catalog__features"
-                  aria-label="Características del servicio"
-                >
-                  <li>Presencia preventiva en el objetivo.</li>
-                  <li>Observación y detección de novedades.</li>
-                  <li>Actuación conforme a consignas acordadas.</li>
-                </ul>
-
-                <a
-                  class="button button--primary services-catalog__contact"
-                  href="https://wa.me/5493513581736"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Consultar por este servicio
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <div class="services__action">
-            <p>¿Necesitás orientación para definir el servicio adecuado?</p>
-
-            <a
-              class="button button--secondary"
-              href="https://wa.me/5493513581736"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hablar con NexoSegur
-            </a>
+              <button
+                class="services-slider__dot"
+                type="button"
+                aria-label="Ir a Seguridad para eventos"
+              ></button>
+            </div>
           </div>
         </div>
       </section>
