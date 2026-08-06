@@ -223,40 +223,6 @@
 }
 
 /* =======================================================
-   INSTITUTIONAL VALUES
-======================================================= */
-
-.value-item {
-  padding-block: var(--space-5);
-
-  border-bottom: 1px solid var(--color-border);
-}
-
-.value-item:first-child {
-  padding-top: 0;
-}
-
-.value-item:last-child {
-  padding-bottom: 0;
-
-  border-bottom: 0;
-}
-
-.value-item__title {
-  margin-bottom: var(--space-2);
-
-  color: var(--color-primary);
-
-  font-size: 1.2rem;
-}
-
-.value-item__description {
-  color: var(--color-text-muted);
-
-  line-height: 1.65;
-}
-
-/* =======================================================
    SUPPORT CARDS
 ======================================================= */
 

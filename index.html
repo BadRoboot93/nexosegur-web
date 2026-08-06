@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/institutional.css" />
     <link rel="stylesheet" href="assets/css/services.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
@@ -120,76 +120,83 @@
         class="institutional"
         aria-labelledby="nosotros-titulo"
       >
-        <div class="container">
-          <header class="section-header">
-            <p class="section-header__eyebrow">Sobre NexoSegur</p>
+        <div class="container institutional__container">
+          <!-- Imagen institucional -->
+          <div class="institutional__media" aria-hidden="true">
+            <img
+              class="institutional__image"
+              src="assets/images/institutional/nexosegur-institucional.webp"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
-            <h2 id="nosotros-titulo" class="section-header__title">
-              Una empresa cercana, transparente y profesional
-            </h2>
-
-            <p class="section-header__description">
-              NexoSegur es una empresa de seguridad privada de reciente
-              creación, formalmente habilitada para desarrollar su actividad en
-              la provincia de Córdoba.
-            </p>
-          </header>
-
+          <!-- Contenido institucional -->
           <div class="institutional__content">
-            <div class="institutional__information">
-              <div
-                class="media-placeholder institutional__media"
-                aria-hidden="true"
-              >
-                <span>Imagen institucional</span>
-              </div>
+            <header class="institutional__header">
+              <p class="institutional__eyebrow">Sobre NexoSegur</p>
 
-              <div class="institutional__text">
-                <p>
-                  La empresa nace a partir de la experiencia previa de sus
-                  integrantes en el sector y del conocimiento directo de las
-                  necesidades habituales de clientes y personal operativo.
-                </p>
+              <h2 id="nosotros-titulo" class="institutional__title">
+                Una empresa cercana, profesional y transparente
+              </h2>
 
-                <p>
-                  Su propuesta busca combinar prevención, profesionalismo y
-                  seguimiento responsable, manteniendo una comunicación clara y
-                  directa durante la prestación de cada servicio.
-                </p>
-              </div>
+              <p class="institutional__description">
+                NexoSegur es una empresa de seguridad privada de reciente
+                creación, formalmente habilitada para desarrollar su actividad
+                en la provincia de Córdoba.
+              </p>
+            </header>
+
+            <div class="institutional__text">
+              <p>
+                La empresa nace a partir de la experiencia previa de sus
+                integrantes en el sector y del conocimiento directo de las
+                necesidades habituales de clientes y personal operativo.
+              </p>
+
+              <p>
+                Su propuesta busca combinar prevención, profesionalismo y
+                seguimiento responsable, manteniendo una comunicación clara y
+                directa durante la prestación de cada servicio.
+              </p>
             </div>
 
             <ul
               class="institutional__values"
               aria-label="Valores institucionales de NexoSegur"
             >
-              <li class="value-item">
-                <h3 class="value-item__title">Cercanía</h3>
-                <p class="value-item__description">
+              <li class="institutional-value">
+                <h3 class="institutional-value__title">Cercanía</h3>
+
+                <p class="institutional-value__description">
                   Comunicación directa y atención próxima con clientes y
                   personal operativo.
                 </p>
               </li>
 
-              <li class="value-item">
-                <h3 class="value-item__title">Confianza</h3>
-                <p class="value-item__description">
+              <li class="institutional-value">
+                <h3 class="institutional-value__title">Confianza</h3>
+
+                <p class="institutional-value__description">
                   Relaciones basadas en el compromiso, la responsabilidad y el
                   cumplimiento.
                 </p>
               </li>
 
-              <li class="value-item">
-                <h3 class="value-item__title">Transparencia</h3>
-                <p class="value-item__description">
+              <li class="institutional-value">
+                <h3 class="institutional-value__title">Transparencia</h3>
+
+                <p class="institutional-value__description">
                   Información clara y coherente con la situación real de la
                   empresa y de cada servicio.
                 </p>
               </li>
 
-              <li class="value-item">
-                <h3 class="value-item__title">Profesionalismo</h3>
-                <p class="value-item__description">
+              <li class="institutional-value">
+                <h3 class="institutional-value__title">Profesionalismo</h3>
+
+                <p class="institutional-value__description">
                   Prestación responsable, supervisión y seguimiento de las
                   consignas acordadas.
                 </p>
