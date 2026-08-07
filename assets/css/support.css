@@ -8,9 +8,8 @@
 
   padding-block: clamp(4rem, 6vw, 5rem);
 
-  color: var(--color-on-dark);
-
-  background-color: var(--color-primary-dark);
+  color: var(--color-text);
+  background-color: var(--color-surface-1);
 }
 
 /* =======================================================
@@ -37,7 +36,7 @@
 .institutional-support__eyebrow {
   margin-bottom: var(--space-3);
 
-  color: var(--color-accent-light);
+  color: var(--color-accent);
 
   font-size: 0.8rem;
   font-weight: 800;
@@ -48,7 +47,7 @@
 .institutional-support__title {
   margin-bottom: var(--space-4);
 
-  color: var(--color-white);
+  color: var(--color-primary);
 
   font-size: clamp(2.3rem, 4vw, 3.4rem);
   font-weight: 800;
@@ -61,7 +60,7 @@
   max-width: 58ch;
   margin-inline: auto;
 
-  color: var(--color-on-dark-muted);
+  color: var(--color-text-muted);
 
   font-size: 1rem;
   line-height: 1.65;
@@ -75,33 +74,26 @@
 .institutional-support__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
 
   margin: 0;
   padding: 0;
 
-  border-top: 1px solid rgb(255 255 255 / 14%);
-  border-bottom: 1px solid rgb(255 255 255 / 14%);
+  border: 0;
 
   list-style: none;
 }
 
 .support-item {
-  position: relative;
-
   min-width: 0;
-  padding: clamp(1.75rem, 3vw, 2.5rem) clamp(1.75rem, 3.5vw, 3rem);
-}
+  padding: clamp(2rem, 3vw, 2.5rem);
 
-.support-item:first-child {
-  padding-left: 0;
-}
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: var(--radius-large);
 
-.support-item:last-child {
-  padding-right: 0;
-}
+  background-color: var(--color-primary-dark);
 
-.support-item + .support-item {
-  border-left: 1px solid rgb(255 255 255 / 14%);
+  box-shadow: 0 1rem 2.5rem -1.5rem rgb(13 43 92 / 30%);
 }
 
 /* =======================================================
@@ -154,18 +146,21 @@
 @media (hover: hover) and (pointer: fine) {
   .support-item {
     transition:
-      background-color var(--transition-fast),
-      transform var(--transition-fast);
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast),
+      background-color var(--transition-fast);
   }
 
   .support-item:hover {
-    transform: translateY(-0.35rem);
+    transform: translateY(-0.5rem);
 
-    background-color: rgb(255 255 255 / 3%);
+    background-color: var(--color-primary);
+
+    box-shadow: 0 1.25rem 2.5rem -1rem rgb(13 43 92 / 35%);
   }
 
   .support-item:hover .support-item__number {
-    opacity: 0.65;
+    opacity: 0.75;
   }
 }
 
@@ -206,6 +201,10 @@
    MOBILE
 ======================================================= */
 
+/* =======================================================
+   MOBILE
+======================================================= */
+
 @media (max-width: 48rem) {
   .institutional-support__list {
     grid-template-columns: 1fr;
@@ -222,6 +221,8 @@
   }
 
   .support-item {
+    padding: var(--space-5);
+
     text-align: center;
   }
 
@@ -231,16 +232,5 @@
 
   .support-item__number {
     text-align: center;
-  }
-
-  .support-item,
-  .support-item:first-child,
-  .support-item:last-child {
-    padding: var(--space-5) 0;
-  }
-
-  .support-item + .support-item {
-    border-top: 1px solid rgb(255 255 255 / 14%);
-    border-left: 0;
   }
 }
