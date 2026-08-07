@@ -23,7 +23,7 @@
   transition: transform var(--transition-fast);
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   transform: translateY(0);
 }
 
@@ -79,16 +79,12 @@
   outline-offset: 3px;
 }
 
-/* Botón principal */
-
 .button--primary {
   color: var(--color-white);
   background-color: var(--color-accent);
 
   box-shadow: var(--shadow-small);
 }
-
-/* Botón secundario general */
 
 .button--secondary {
   color: var(--color-primary);
@@ -98,14 +94,14 @@
   background-color: transparent;
 }
 
-/* Botón grande */
-
 .button--large {
   min-height: 3.75rem;
   padding-inline: 2.25rem;
 }
 
-/* Hover solo en dispositivos que realmente lo soportan */
+/* =======================================================
+   BUTTON INTERACTION
+======================================================= */
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
@@ -113,7 +109,7 @@
   }
 
   .button--primary:hover {
-    background-color: #2b89f3;
+    background-color: var(--color-accent-hover);
 
     box-shadow: 0 10px 24px rgb(22 119 232 / 28%);
   }
@@ -135,7 +131,7 @@
   text-align: center;
 }
 
-.contact__eyebrow {
+.section-header__eyebrow {
   margin-bottom: var(--space-3);
 
   color: var(--color-accent);
@@ -151,131 +147,17 @@
 
   color: var(--color-primary);
 
-  text-wrap: balance;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 .section-header__description {
   color: var(--color-text-muted);
 
-  text-wrap: pretty;
   font-size: 1.08rem;
   line-height: 1.7;
-}
-
-/* =======================================================
-   BASE CARD
-======================================================= */
-
-.card {
-  height: 100%;
-  padding: var(--space-6);
-
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-medium);
-
-  background-color: var(--color-white);
-  box-shadow: var(--shadow-small);
-}
-
-/* =======================================================
-   MEDIA PLACEHOLDER
-======================================================= */
-
-.media-placeholder {
-  display: grid;
-  place-items: center;
-
-  min-height: 20rem;
-
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-large);
-
-  color: var(--color-text-muted);
-
-  background:
-    linear-gradient(
-      135deg,
-      transparent calc(50% - 1px),
-      var(--color-border) 50%,
-      transparent calc(50% + 1px)
-    ),
-    linear-gradient(
-      45deg,
-      transparent calc(50% - 1px),
-      var(--color-border) 50%,
-      transparent calc(50% + 1px)
-    ),
-    var(--color-white);
-
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.media-placeholder span {
-  padding: var(--space-2) var(--space-3);
-
-  border-radius: var(--radius-small);
-
-  background-color: rgb(255 255 255 / 88%);
-}
-
-/* =======================================================
-   SUPPORT CARDS
-======================================================= */
-
-.support-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-4);
-}
-
-.support-card__icon-placeholder {
-  display: grid;
-  place-items: center;
-
-  width: 3rem;
-  height: 3rem;
-
-  border-radius: var(--radius-small);
-
-  color: var(--color-white);
-  background-color: var(--color-primary);
-
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
-.support-card__title {
-  color: var(--color-primary);
-
-  font-size: 1.3rem;
-}
-
-.support-card__description {
-  color: var(--color-text-muted);
-
-  line-height: 1.65;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .services-catalog__tab:hover {
-    border-color: var(--color-border);
-
-    background-color: var(--color-white);
-
-    transform: translateX(4px);
-  }
-
-  .services-catalog__tab.is-active:hover {
-    border-color: transparent;
-
-    color: var(--color-white);
-    background-color: var(--color-primary);
-  }
+  text-wrap: pretty;
 }
 
 /* =======================================================
@@ -284,14 +166,12 @@
 
 @media (prefers-reduced-motion: reduce) {
   .button,
-  .skip-link,
-  .services-catalog__tab {
+  .skip-link {
     transition: none;
   }
 
   .button:hover,
-  .button:active,
-  .services-catalog__tab:hover {
+  .button:active {
     transform: none;
   }
 }

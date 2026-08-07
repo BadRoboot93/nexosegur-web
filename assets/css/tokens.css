@@ -5,8 +5,8 @@
 
   --color-primary: #14396f;
   --color-primary-dark: #081d3f;
-
   --color-accent: #1677e8;
+  --color-accent-hover: #2b89f3;
   --color-accent-light: #8fc5ff;
 
   /* =======================================================
@@ -14,11 +14,8 @@
   ======================================================= */
 
   --color-white: #ffffff;
-  --color-white-soft: #f8fafc;
-
   --color-surface-1: #f4f7fb;
   --color-surface-2: #e9f0f8;
-
   --color-border: #d5dde7;
 
   /* =======================================================
@@ -26,7 +23,6 @@
   ======================================================= */
 
   --color-text: #1f2937;
-  --color-text-light: #ffffff;
   --color-text-muted: #5f6b7a;
 
   /* =======================================================
@@ -90,7 +86,7 @@
   --transition-medium: 300ms ease;
 
   /* =======================================================
-  Text on dark surfaces
+     TEXT ON DARK SURFACES
   ======================================================= */
 
   --color-on-dark: #ffffff;

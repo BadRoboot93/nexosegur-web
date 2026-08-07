@@ -20,10 +20,13 @@ address {
 
 ul {
   padding: 0;
+
   list-style: none;
 }
 
-img {
+img,
+picture,
+svg {
   display: block;
   max-width: 100%;
 }
