@@ -53,7 +53,6 @@
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.035em;
-  text-wrap: balance;
 }
 
 .institutional-support__description {
@@ -64,7 +63,6 @@
 
   font-size: 1rem;
   line-height: 1.65;
-  text-wrap: pretty;
 }
 
 /* =======================================================
@@ -75,13 +73,6 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-5);
-
-  margin: 0;
-  padding: 0;
-
-  border: 0;
-
-  list-style: none;
 }
 
 .support-item {
@@ -114,9 +105,7 @@
 
   opacity: 0.35;
 
-  transition:
-    opacity var(--transition-fast),
-    color var(--transition-fast);
+  transition: opacity var(--transition-fast);
 }
 
 .support-item__title {
@@ -136,7 +125,6 @@
 
   font-size: 0.95rem;
   line-height: 1.6;
-  text-wrap: pretty;
 }
 
 /* =======================================================
@@ -201,23 +189,9 @@
    MOBILE
 ======================================================= */
 
-/* =======================================================
-   MOBILE
-======================================================= */
-
 @media (max-width: 48rem) {
   .institutional-support__list {
     grid-template-columns: 1fr;
-  }
-
-  .institutional-support__header {
-    margin-inline: auto;
-
-    text-align: center;
-  }
-
-  .institutional-support__description {
-    margin-inline: auto;
   }
 
   .support-item {
@@ -228,9 +202,5 @@
 
   .support-item__description {
     margin-inline: auto;
-  }
-
-  .support-item__number {
-    text-align: center;
   }
 }

@@ -68,7 +68,7 @@
 
   color: var(--color-on-dark);
 
-  background-color: rgb(5 19 44);
+  background-color: var(--color-primary-dark);
 
   background-image:
     linear-gradient(
@@ -83,8 +83,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  box-shadow: none;
 
   transition:
     transform 0.35s ease,
@@ -151,7 +149,6 @@
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.025em;
-  text-wrap: balance;
 }
 
 .service-card__description {
@@ -159,7 +156,6 @@
 
   font-size: 0.94rem;
   line-height: 1.6;
-  text-wrap: pretty;
 }
 
 .service-card__features {
@@ -391,7 +387,7 @@
   .service-card__content,
   .services-slider__track,
   .services-slider__dot {
-    transition-duration: 0.01ms;
+    transition-duration: none;
   }
 
   .service-card:hover,

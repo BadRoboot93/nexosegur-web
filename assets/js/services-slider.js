@@ -11,7 +11,7 @@ if (slider) {
   let currentIndex = 0;
   let visibleCards = 1;
   let gap = 0;
-  let totalPositions = 1;
+  let totalPositions = 0;
 
   let startX = 0;
   let currentX = 0;
@@ -188,7 +188,10 @@ if (slider) {
 
     isDragging = false;
 
-    viewport.releasePointerCapture(event.pointerId);
+    if (viewport.hasPointerCapture(event.pointerId)) {
+      viewport.releasePointerCapture(event.pointerId);
+    }
+
     viewport.classList.remove("is-dragging");
     track.classList.remove("is-dragging");
 

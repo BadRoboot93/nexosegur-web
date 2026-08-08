@@ -11,10 +11,6 @@
    MAIN
 ======================================================= */
 
-.site-footer__main {
-  background-color: var(--color-primary-dark);
-}
-
 .site-footer__container {
   display: grid;
   grid-template-columns:
@@ -139,8 +135,6 @@
 
   font-size: 0.92rem;
   line-height: 1.5;
-
-  transition: color var(--transition-fast);
 }
 
 /* =======================================================
@@ -176,10 +170,6 @@
   line-height: 1.5;
 
   overflow-wrap: anywhere;
-}
-
-.site-footer__contact-item > a {
-  transition: color var(--transition-fast);
 }
 
 /* =======================================================

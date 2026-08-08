@@ -16,7 +16,7 @@
       rgb(8 29 63 / 42%) 55%,
       rgb(8 29 63 / 10%) 100%
     ),
-    url("../images/hero/hero-nexosegur2.png") center / cover no-repeat;
+    url("../images/hero/hero-nexosegur2.webp") center / cover no-repeat;
 }
 
 .hero::before {

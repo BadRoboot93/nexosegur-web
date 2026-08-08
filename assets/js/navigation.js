@@ -1,3 +1,5 @@
+"use strict";
+
 const navigationToggle = document.querySelector(".navigation-toggle");
 const primaryNavigation = document.querySelector(".primary-navigation");
 const navigationLinks = document.querySelectorAll(".primary-navigation a");
@@ -25,6 +27,15 @@ if (navigationToggle && primaryNavigation) {
 
   navigationLinks.forEach((link) => {
     link.addEventListener("click", closeNavigation);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const isOpen = navigationToggle.getAttribute("aria-expanded") === "true";
+
+    if (event.key === "Escape" && isOpen) {
+      closeNavigation();
+      navigationToggle.focus();
+    }
   });
 
   window.addEventListener("resize", () => {
