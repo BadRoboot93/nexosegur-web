@@ -70,7 +70,7 @@
 .institutional__eyebrow {
   margin-bottom: var(--space-3);
 
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 
   font-size: 0.8rem;
   font-weight: 800;

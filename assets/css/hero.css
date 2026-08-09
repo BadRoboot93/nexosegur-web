@@ -16,7 +16,7 @@
       rgb(8 29 63 / 42%) 55%,
       rgb(8 29 63 / 10%) 100%
     ),
-    url("../images/hero/hero-nexosegur2.webp") center / cover no-repeat;
+    url("../images/hero/hero-nexosegur.webp") center / cover no-repeat;
 }
 
 .hero::before {
@@ -133,7 +133,7 @@
         rgb(8 29 63 / 68%) 48%,
         rgb(8 29 63 / 26%) 100%
       ),
-      url("../images/hero/hero-nexosegur2.png") 62% center / cover no-repeat;
+      url("../images/hero/hero-nexosegur.webp") 62% center / cover no-repeat;
   }
 
   .hero__container {
@@ -185,7 +185,7 @@
         rgb(8 29 63 / 68%) 38%,
         rgb(8 29 63 / 88%) 100%
       ),
-      url("../images/hero/hero-nexosegur2.png") 68% center / cover no-repeat;
+      url("../images/hero/hero-nexosegur.webp") 68% center / cover no-repeat;
   }
 
   .hero::before {

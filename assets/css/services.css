@@ -239,35 +239,39 @@
 .services-slider__dot {
   position: relative;
 
-  width: 0.65rem;
-  height: 0.65rem;
+  display: grid;
+  place-items: center;
+
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
 
   border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.services-slider__dot::after {
+  width: 0.65rem;
+  height: 0.65rem;
+
   border-radius: 50%;
 
   background-color: rgb(13 43 92 / 24%);
 
-  cursor: pointer;
+  content: "";
 
   transition:
     width var(--transition-fast),
     background-color var(--transition-fast);
 }
 
-.services-slider__dot::before {
-  position: absolute;
-  inset: -0.45rem;
-
-  content: "";
-}
-
-.services-slider__dot.is-active,
-.services-slider__dot[aria-current="true"] {
+.services-slider__dot.is-active::after,
+.services-slider__dot[aria-current="true"]::after {
   width: 1.6rem;
-
   border-radius: 999px;
-
   background-color: var(--color-accent);
 }
 

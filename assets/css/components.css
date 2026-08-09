@@ -81,7 +81,7 @@
 
 .button--primary {
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-strong);
 
   box-shadow: var(--shadow-small);
 }
@@ -134,7 +134,7 @@
 .section-header__eyebrow {
   margin-bottom: var(--space-3);
 
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 
   font-size: 0.8rem;
   font-weight: 800;

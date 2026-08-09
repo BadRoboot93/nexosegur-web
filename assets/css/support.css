@@ -36,7 +36,7 @@
 .institutional-support__eyebrow {
   margin-bottom: var(--space-3);
 
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 
   font-size: 0.8rem;
   font-weight: 800;
@@ -103,7 +103,7 @@
   line-height: 0.9;
   letter-spacing: -0.05em;
 
-  opacity: 0.35;
+  opacity: 0.65;
 
   transition: opacity var(--transition-fast);
 }
@@ -148,7 +148,7 @@
   }
 
   .support-item:hover .support-item__number {
-    opacity: 0.75;
+    opacity: 0.9;
   }
 }
 
