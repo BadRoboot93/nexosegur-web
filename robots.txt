@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nexosegur.netlify.app/sitemap.xml
+Sitemap: https://nexosegur.com.ar/sitemap.xml
