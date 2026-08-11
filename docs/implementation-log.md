@@ -678,3 +678,111 @@ encuentran:
 
 Estas mejoras deberán evaluarse respetando el alcance definido en el DRQ y el
 principio de no anticipar necesidades sin justificación.
+
+# Cierre de implementación — v1.0
+
+## Publicación en producción
+
+Se completó la publicación del sitio institucional de NexoSegur en un entorno de producción.
+
+El sitio fue desplegado inicialmente mediante Netlify y posteriormente se configuró el dominio institucional definitivo:
+
+`https://nexosegur.com.ar`
+
+La configuración incluyó:
+
+- registro del dominio `nexosegur.com.ar`;
+- delegación DNS hacia Netlify;
+- configuración del dominio personalizado;
+- definición de `nexosegur.com.ar` como dominio principal;
+- redirección de `www.nexosegur.com.ar` hacia el dominio principal;
+- habilitación de HTTPS mediante certificado SSL/TLS;
+- renovación automática del certificado.
+
+---
+
+## Optimización y rendimiento
+
+Antes de la publicación definitiva se realizaron tareas de optimización orientadas a mejorar el rendimiento del sitio.
+
+Entre las principales mejoras se encuentran:
+
+- optimización y conversión de imágenes a formatos adecuados para web;
+- reducción del peso de los recursos visuales;
+- revisión del comportamiento responsive;
+- pruebas en dispositivos reales;
+- revisión mediante Lighthouse;
+- optimización del rendimiento en dispositivos móviles y escritorio.
+
+Las pruebas realizadas mostraron resultados satisfactorios tanto en escritorio como en dispositivos móviles.
+
+---
+
+## SEO técnico básico
+
+Se incorporaron las configuraciones técnicas necesarias para facilitar el rastreo e indexación del sitio.
+
+Se configuraron:
+
+- título y descripción de la página;
+- URL canonical con el dominio definitivo;
+- metadatos Open Graph;
+- directivas de indexación;
+- archivo `robots.txt`;
+- archivo `sitemap.xml`;
+- URLs absolutas asociadas al dominio de producción.
+
+El sitemap definitivo se encuentra en:
+
+`https://nexosegur.com.ar/sitemap.xml`
+
+---
+
+## Google Search Console
+
+Se configuró el dominio `nexosegur.com.ar` en Google Search Console.
+
+Se realizaron las siguientes acciones:
+
+- verificación de propiedad del dominio mediante DNS;
+- registro del sitemap;
+- inspección de la URL principal;
+- solicitud inicial de indexación.
+
+La indexación efectiva queda sujeta a los procesos de rastreo e indexación de Google.
+
+---
+
+## Recursos de identidad
+
+Se prepararon recursos específicos para la identificación del sitio en navegadores y dispositivos.
+
+Se incorporaron:
+
+- favicon optimizado;
+- favicon de 32 × 32 px;
+- Apple Touch Icon de 180 × 180 px.
+
+---
+
+## Estado de la versión
+
+La primera versión funcional del sitio institucional se considera completada.
+
+La solución incluye:
+
+- presentación institucional;
+- información sobre la empresa;
+- catálogo de servicios;
+- respaldo institucional;
+- inicio de contacto mediante WhatsApp;
+- diseño responsive;
+- navegación adaptable;
+- accesibilidad básica;
+- optimización de rendimiento;
+- SEO técnico básico;
+- dominio institucional;
+- HTTPS;
+- publicación en producción.
+
+Con este estado se considera alcanzado el alcance definido para la versión 1.0 del proyecto.
